@@ -1,5 +1,33 @@
+# Ignore config directory
+/.config/BraveSoftware
+/.config/filezilla
+/.config/desmume
+/.config/dconf
+/.config/GIMP
+/.config/galculator
+/.config/fontforge
+/.config/monero-project
+/.config/qalculate
+/.config/qt5ct
+/.config/pulse
+/.config/pcmanfm
+/.config/transmission
+/.config/transmission-daemon
+/.config/session
+/.config/shell
+/.config/nicotine
+/.config/neofetch
+/.config/mozc
+/.config/libreoffice
+/.config/libfm
+k*
+
+# vim directory
+/.config/nvim/pack
+/.config/nvim/vim-plug
+/.config/nvim/autoload
+
 # Ignore directories
-/.config
 /.bitmonero
 /.cache
 /.cargo

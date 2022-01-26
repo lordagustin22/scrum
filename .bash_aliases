@@ -2,7 +2,7 @@
 # youtube-dl
 alias \
  yt='youtube-dl --add-metadata -i' \
- yta='yt -x -f bestaudio/best -o "~/Música/dl-music/%(title)s.%(ext)s"' \
+ yta='yt -x -f bestaudio/best -o "~/Musica/dl-music/%(title)s.%(ext)s"' \
  ytp='yt -x -f bestaudio/best -o "~/Vídeos/Podcast/%(title)s.%(ext)s"'
 
 # bashrc/other configs

@@ -1,0 +1,102 @@
+Z The simple hotkey daemon
+# config
+
+# Kill a process
+
+# kill dwm
+super + shift + q
+    pkill -SIGUSR1 dwm
+
+# reboots sxhkd
+alt + Escape
+	pkill -SIGUSR1 sxhkd
+
+# reboots mpd
+alt + m
+	pkill -USR1 mpd && mpd
+
+# kills screenkey
+alt + 4
+	pkill -USR1 screenkey
+
+# anki
+alt + a
+    anki
+
+# browser
+alt + b
+    firefox
+
+# launch dmenu
+alt + d
+    dmenu_run -i -l 10
+
+# screenkey
+alt + s
+	screenkey
+
+# screencast (or kill it)
+alt + ctrl + e
+    ~/.local/bin/dmenurecord.sh
+
+# open lf
+alt + l
+    st -e lf
+
+# pavucontrol
+alt + v
+    pavucontrol
+
+# open ncmpcpp
+alt + w
+    st -e ncmpcpp
+
+# open htop
+alt + h
+    st -e htop
+
+# Open transmission
+alt + t
+     transmission-daemon && st -e tremc
+
+# take screenshot
+Print
+    ~/.local/bin/maimpick.sh
+
+# calculator
+super + c
+    galculator
+
+# calendar
+super + alt + c
+    st -e calcurse
+
+# dunstctl
+# close
+ctrl + space
+    dunstctl close
+
+# close all
+alt + ctrl + space
+    dunstctl close-all
+
+# history menu
+ctrl + period
+    dunstctl history-pop
+
+# context menu
+alt + ctrl + period
+    dunstctl context
+
+# Mount/Unmount devices
+# mount android device
+alt + 2
+    go-mtpfs ~/cell
+
+# unmount android device
+alt + 3
+    fusermount -u cell/
+
+# nullpomino
+alt + 5
+    cd ~/repos/NullpoMino7_5_0 && st -e ./play_swing

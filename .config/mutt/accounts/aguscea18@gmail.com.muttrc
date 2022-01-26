@@ -1,0 +1,23 @@
+# vim: filetype=neomuttrc
+# muttrc file for account aguscea18@gmail.com
+set realname = "Agustin Gomez"
+set from = "aguscea18@gmail.com"
+set sendmail = "msmtp -a aguscea18@gmail.com"
+alias me Agus <aguscea18@gmail.com>
+set folder = "imaps://aguscea18@gmail.com@imap.gmail.com:993"
+set header_cache = /home/utane/.cache/mutt-wizard/agusce/headers
+set message_cachedir = /home/utane/.cache/mutt-wizard/agusce/bodies
+set mbox_type = Maildir
+set hostname = "gmail.com"
+source /usr/share/mutt-wizard/switch.muttrc
+set spoolfile = +INBOX
+set postponed = +Drafts
+set trash = +Trash
+set record = +Sent
+set imap_user = "aguscea18@gmail.com"
+set imap_pass = "`pass aguscea18@gmail.com`"
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+
+mailboxes "=INBOX" "=Trash" "=[Gmail]/Borradores" "=[Gmail]/Destacados" "=[Gmail]/Enviados" "=[Gmail]/Importantes" "=[Gmail]/Papelera" "=[Gmail]/Spam" "=[Gmail]/Todos"

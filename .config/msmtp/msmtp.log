@@ -1,0 +1,3 @@
+ene 19 10:42:11 host=smtp.gmail.com tls=on auth=on user=niconecrofilo589@gmail.com from=niconecrofilo589@gmail.com recipients=agusdayi2513@yandex.com mailsize=325 smtpstatus=250 smtpmsg='250 2.0.0 OK  1642599729 be4sm6691415oib.56 - gsmtp' exitcode=EX_OK
+ene 19 16:00:17 host=smtp.gmail.com tls=on auth=on user=aguscea18@gmail.com from=aguscea18@gmail.com recipients=rrhh.busqueda@hotmail.com mailsize=475923 smtpstatus=250 smtpmsg='250 2.0.0 OK  1642618815 i10sm197546otf.72 - gsmtp' exitcode=EX_OK
+ene 19 16:05:03 host=smtp.gmail.com tls=on auth=on user=aguscea18@gmail.com from=aguscea18@gmail.com recipients=buhoconsultoresgastronomicos@outlook.com mailsize=475969 smtpstatus=250 smtpmsg='250 2.0.0 OK  1642619101 c4sm267741otp.34 - gsmtp' exitcode=EX_OK
