@@ -1,0 +1,20 @@
+#!/bin/sh
+sxhkd -m 1 &
+dunst &
+unclutter &
+mpd &
+# nm-applet &
+xset r rate 300 50 &
+redshift &
+sleep 10 && dwmblocks &
+udiskie &
+~/.local/bin/setbg &
+picom &
+kmix --keepvisibility &
+xrdb ~/.Xresources; sleep 5 && ~/.local/bin/remaps.sh
+
+export GTK_IM_MODULE='fcitx' &
+export QT_IM_MODULE='fcitx' &
+export SDL_IM_MODULE='fcitx' &
+export XMODIFIERS='@im=fcitx' &
+sleep 2 && fcitx -d &
