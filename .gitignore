@@ -63,11 +63,14 @@ k*
 .urlview
 .viminfo
 .wget-hsts
-*.txt
-*.pdf
-*.mp3
 .gtkrc-2.0
 .notmuch-config
 .bash_history
 .bash_logout
 *.git
+
+# Ignore filetypes
+*.txt
+*.pdf
+*.mp3
+*.mp4
