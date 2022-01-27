@@ -16,10 +16,12 @@
 /.config/session
 /.config/shell
 /.config/nicotine
+/.config/fcitx
 /.config/neofetch
 /.config/mozc
 /.config/libreoffice
 /.config/libfm
+/.config/configstore
 k*
 
 # vim directory

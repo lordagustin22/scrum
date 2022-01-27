@@ -9,7 +9,7 @@
 % egrep -v '^#' .ncmpcpp/config
 ncmpcpp_directory = "/home/utane/.config/ncmpcpp"
 lyrics_directory = "/home/utane/.local/share/lyrics"
-mpd_music_dir = "~/Música"
+mpd_music_dir = "~/Musica"
 
 message_delay_time = "1"
 visualizer_in_stereo = "yes"
