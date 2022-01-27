@@ -21,6 +21,7 @@
 /.config/mozc
 /.config/libreoffice
 /.config/libfm
+/.config/mpd/mpd.pid
 /.config/configstore
 k*
 
