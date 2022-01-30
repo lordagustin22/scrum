@@ -21,7 +21,6 @@
 /.config/mozc
 /.config/libreoffice
 /.config/libfm
-/.config/mpd/mpd.pid
 /.config/configstore
 k*
 
@@ -69,6 +68,7 @@ k*
 .bash_history
 .bash_logout
 *.git
+!mpd.conf
 
 # Ignore filetypes
 *.txt

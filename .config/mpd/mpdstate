@@ -2,12 +2,21 @@ sw_volume: 100
 audio_device_state:1:pulse
 audio_device_state:1:Visualizer feed
 state: stop
+current: 1
 random: 0
 repeat: 0
 single: 0
 consume: 0
-crossfade: 0
+crossfade: 5
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
+0:Genesis full/1986 Invisible Touch (2007 Remaster) @320/01 Invisible Touch.mp3
+1:Genesis full/1986 Invisible Touch (2007 Remaster) @320/02 Tonight Tonight Tonight.mp3
+2:Genesis full/1986 Invisible Touch (2007 Remaster) @320/03 Land Of Confusion.mp3
+3:Genesis full/1986 Invisible Touch (2007 Remaster) @320/04 In Too Deep.mp3
+4:Genesis full/1986 Invisible Touch (2007 Remaster) @320/05 Anything She Does.mp3
+5:Genesis full/1986 Invisible Touch (2007 Remaster) @320/06 Domino.mp3
+6:Genesis full/1986 Invisible Touch (2007 Remaster) @320/07 Throwing It All Away.mp3
+7:Genesis full/1986 Invisible Touch (2007 Remaster) @320/08 The Brazilian.mp3
 playlist_end
