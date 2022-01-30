@@ -35,7 +35,8 @@ alias \
 alias \
 	z="zathura" \
 	sdn="sudo shutdown -h now" \
-        mk="sudo make install"
+        mk="sudo make install" \
+        dblok="dwmblocks &"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

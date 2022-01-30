@@ -42,6 +42,7 @@ export DTERM="${TERMINAL} -e"   # terminal executing program variable
 export VISUAL="nvim"
 export BROWSER="brave"
 PATH=$PATH:"$HOME/.local/bin:$HOME/.local/bin/statusbar"   # path for .local/bin
+export penpath="/run/media/utane/DUAN"
 
 # ~/ Clean-up:
 export LESSHISTFILE="-"
