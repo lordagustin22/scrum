@@ -68,7 +68,10 @@ k*
 .bash_history
 .bash_logout
 *.git
-!mpd.conf
+/.config/mpd/mpd.pid
+/.config/mpd/mpd.log
+/.config/mpd/mpdstate
+/.config/mpd/mpd.db
 
 # Ignore filetypes
 *.txt
