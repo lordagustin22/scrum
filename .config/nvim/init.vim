@@ -2,9 +2,9 @@ let mapleader ='\'
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
 " Goyo plugin makes text more readable when writing prose:
-    "   map <leader>f :Goyo \| set bg=light \| set linebreak<CR>
+       map <leader>f :Goyo \| set bg=light \| set linebreak<CR>
 " Spell-check set to <leader>o, 'o' for 'orthography':
-    "   map <leader>o :setlocal spell! spelllang=es_ar<CR>
+       map <leader>o :setlocal spell! spelllang=es_ar<CR>
 
 " Nerd tree
 	map <leader>n :NERDTreeToggle<CR>
@@ -65,10 +65,10 @@ map <Leader>tk <C-w>t<C-w>K
 	cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " Enable Goyo by default for mutt writing
-    "   autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
-    "   autocmd BufRead,BufNewFile tmp/neomutt* :Goyo | set bg=light
-    "   autocmd BufRead,BufNewFile /tmp/neomutt* map ZZ :Goyo\|x!<CR>
-    "   autocmd BufRead,BufNewFile /tmp/neomutt* map ZQ :Goyo\|q!<CR>
+       autocmd BufRead,BufNewFile /tmp/neomutt* let g:goyo_width=80
+       autocmd BufRead,BufNewFile tmp/neomutt* :Goyo | set bg=light
+       autocmd BufRead,BufNewFile /tmp/neomutt* map ZZ :Goyo\|x!<CR>
+       autocmd BufRead,BufNewFile /tmp/neomutt* map ZQ :Goyo\|q!<CR>
 
 " Run xrdb whenever Xdefaults or Xresources are updated.
 	autocmd BufRead,BufNewFile Xresources,Xdefaults,xresources,xdefaults set filetype=xdefaults
@@ -125,8 +125,10 @@ set noruler
 	filetype plugin on
 	set encoding=utf-8
 	set number relativenumber
+
 " Enable autocompletion:
 	set wildmode=longest,list,full
+
 " Disables automatic commenting on newline:
 	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
