@@ -22,6 +22,7 @@
 /.config/libreoffice
 /.config/libfm
 /.config/configstore
+*SoulseekQt
 k*
 
 # vim directory
@@ -72,6 +73,7 @@ k*
 /.config/mpd/mpd.log
 /.config/mpd/mpdstate
 /.config/mpd/mpd.db
+/.config/QtProject.conf
 
 # Ignore filetypes
 *.txt
