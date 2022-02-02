@@ -58,6 +58,7 @@ k*
 /Público
 /repos
 /.ssh
+/R
 
 # Ignore files
 .mbsyncrc
@@ -74,10 +75,11 @@ k*
 /.config/mpd/mpdstate
 /.config/mpd/mpd.db
 /.config/QtProject.conf
+/.config/msmtp/msmmtp.log
+.Rhistory
 
 # Ignore filetypes
 *.txt
 *.pdf
 *.mp3
 *.mp4
-msmmtp.log

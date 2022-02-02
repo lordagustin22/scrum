@@ -150,6 +150,8 @@ set noruler
 	autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 	autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
 	autocmd BufRead,BufNewFile *.tex set filetype=tex
+        " autocmd BufNewFile,BufFilePre,BufRead *.rmd,*.Rmd set filetype=markdown
+        " autocmd Filetype markdown map <F5> :!Rscript -e "rmarkdown::render('%', 'pdf_document')"<CR
 
 let s:hidden_all = 0
 set showmode

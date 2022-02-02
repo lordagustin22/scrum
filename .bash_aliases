@@ -50,6 +50,6 @@ fi
 
 # /dev/null aliases (no annoying stdout from programs)
 alias  \
-        bra='brave > /dev/null 2>&1 &' \
+        bra='brave > /dev/null 2>&1' \
         pcm='pcmanfm > /dev/null 2>&1 &' \
         picom='picom > /dev/null 2>&1 &'
