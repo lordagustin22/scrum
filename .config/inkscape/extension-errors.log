@@ -10,3 +10,9 @@ Dependencia:
 	localización: trayecto
 	cadena: fig2dev
 
+La extensión Optimized PNG» no se ha cargado porque no se cumplió una dependencia.
+Dependencia:
+	tipo: executable
+	localización: trayecto
+	cadena: optipng
+

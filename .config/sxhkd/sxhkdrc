@@ -44,7 +44,7 @@ alt + l
     st -e lf
 
 # pavucontrol
-alt + v
+alt + shift + v
     pavucontrol
 
 # open ncmpcpp

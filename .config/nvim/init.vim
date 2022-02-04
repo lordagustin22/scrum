@@ -164,5 +164,5 @@ if !has('gui_running')
 endif
 
  let g:lightline = {
-             \ 'colorscheme': 'Tomorrow_Night',
+             \ 'colorscheme': 'darcula',
              \ }
