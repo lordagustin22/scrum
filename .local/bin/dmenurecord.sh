@@ -30,11 +30,11 @@ killrecording() {
 screencast() { \
 	ffmpeg -y \
 	-f x11grab \
-	-framerate 60 \
+	-framerate 23 \
 	-s "$(xdpyinfo | awk '/dimensions/ {print $2;}')" \
 	-i "$DISPLAY" \
 	-f alsa -i default \
-	-r 30 \
+	-r 23 \
  	-c:v h264 -crf 0 -preset ultrafast -c:a aac \
 	"$HOME/screencast-$(date '+%y%m%d-%H%M-%S').mp4" &
 	echo $! > /tmp/recordingpid
