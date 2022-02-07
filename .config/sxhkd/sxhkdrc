@@ -71,6 +71,10 @@ super + c
 super + alt + c
     st -e calcurse
 
+# gimp
+alt + g
+    gimp
+
 # dunstctl
 # close
 ctrl + space
