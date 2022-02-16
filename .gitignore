@@ -3,6 +3,7 @@
 /.config/filezilla
 /.config/desmume
 /.config/dconf
+/.config/Meltytech
 /.config/GIMP
 /.config/galculator
 /.config/fontforge
@@ -84,5 +85,7 @@ k*
 *.mp3
 *.mp4
 *.jpg
+*.jpeg
+*.md
 *.png
 *.m4a

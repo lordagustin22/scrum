@@ -1,2 +1,0 @@
-# utane
-main dotfiles 

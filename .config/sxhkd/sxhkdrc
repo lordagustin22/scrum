@@ -4,8 +4,8 @@ Z The simple hotkey daemon
 # Kill a process
 
 # kill dwm
-super + shift + q
-    pkill -SIGUSR1 dwm
+ # super + shift + q
+#   pkill -SIGUSR1 dwm
 
 # reboots sxhkd
 alt + Escape
@@ -18,6 +18,10 @@ alt + m
 # kills screenkey
 alt + 4
 	pkill -USR1 screenkey
+
+# lock screen
+alt + shift + l
+    ~/.local/bin/lockscreen.sh
 
 # anki
 alt + a
