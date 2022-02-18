@@ -36,6 +36,7 @@ alias \
 	z="zathura" \
 	sdn="sudo shutdown -h now" \
         mk="sudo make install" \
+        df="df -lH" \
         dblok="dwmblocks &"
 
 # enable color support of ls and also add handy aliases
@@ -46,6 +47,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias vdir='vdir --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
+    alias hst='history | cut -c 8- | sort | uniq | fzf | tr -d '\n' | xclip -sel c'
 fi
 
 # /dev/null aliases (no annoying stdout from programs)
