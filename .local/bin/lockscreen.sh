@@ -6,7 +6,7 @@ timeout="10000"
 maim -u /tmp/screen.png
 
 # Blurred image
-convert /tmp/screen.png -paint 1 -swirl 360 -gravity center -matte /tmp/screen.png
+convert /tmp/screen.png -blur 0x12 -paint 4 -colorspace Gray -bordercolor '#970C10' -border 5 /tmp/screen.png
 
 # Lock screen
 i3lock -e -f -c 000000 -i /tmp/screen.png
