@@ -5,6 +5,7 @@
 /.config/dconf
 /.config/Meltytech
 /.config/GIMP
+/.config/gtk-2.0/gtkfilechooser.ini
 /.config/galculator
 /.config/fontforge
 /.config/monero-project
