@@ -1,0 +1,9 @@
+#!/bin/sh
+inputim="porongui"
+inputau="culi"
+read -e -i "$inputim" -p "Name the input image: " input
+read -e -i "$inputau" -p "Name the input audio: " input2
+inputim="${input:-$inputim}"
+inputau="${input2:-$inputau}"
+outvid="$inputau"
+ffmpeg -loop 1 -i $inputim.jpg -i $inputau.mp3 -c:v libx264 -tune stillimage -c:a jpg -b:a 192k -vf "scale='iw-mod(iw,2)':'ih-mod(ih,2)',format=yuv420p" -shortest -movflags +faststart $outvid.mp4

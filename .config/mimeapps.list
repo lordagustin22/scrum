@@ -15,7 +15,7 @@ application/x-extension-xhtml=brave-browser.desktop;
 application/x-extension-xht=brave-browser.desktop;
 application/json=nvim.desktop;
 text/markdown=nvim.desktop;
-application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+application/pdf=org.gnome.Evince.desktop;org.pwmt.zathura-pdf-mupdf.desktop;
 
 [Default Applications]
 video/x-matroska=mpv.desktop;

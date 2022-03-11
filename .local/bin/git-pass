@@ -1,0 +1,2 @@
+#!/bin/sh
+echo -n "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" | xclip -sel clip

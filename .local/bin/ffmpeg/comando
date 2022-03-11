@@ -1,0 +1,8 @@
+#!/bin/sh
+auname="poronga"
+vidname="culo"
+read -e -i "$auname" -p "Name the input audio: " input
+read -e -i "$vidname" -p "Name the output video: " input2
+auname="${input:-$auname}"
+vidname="${input2:-$vidname}"
+cat * | ffmpeg -y -framerate 1.079 -f image2pipe -i - -i ../$auname.mp3 -acodec copy -vf 'scale=-2:min(1080\,if(mod(ih\,2)\,ih-1\,ih))' $vidname.mp4

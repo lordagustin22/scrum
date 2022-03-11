@@ -71,6 +71,10 @@ Print
 super + c
     galculator
 
+# qemu
+super + v
+    virt-manager
+
 # calendar
 super + alt + c
     st -e calcurse

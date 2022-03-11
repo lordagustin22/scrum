@@ -1,0 +1,5 @@
+#!/bin/sh
+outfi="Pito"
+read -e -i "$outfi" -p "Please name the file: " input
+outfi="${input:-$outfi}"
+ffmpeg -f concat -safe 0 -i file.txt -c copy $outfi.aac

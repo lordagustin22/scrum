@@ -34,4 +34,4 @@ export TERMINAL="alacritty"	# for terminal env
 export DTERM="${TERMINAL} -e"   # terminal executing program variable
 export VISUAL="nvim"
 export BROWSER="brave"
-PATH=$PATH:~/.local/bin         # path for .local/bin
+PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/ffmpeg:$HOME/.local/bin/statusbar         # path for .local/bin
