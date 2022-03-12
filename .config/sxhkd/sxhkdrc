@@ -45,7 +45,7 @@ alt + ctrl + e
 
 # open lf
 alt + l
-    st -e lf
+    st -e ~/.local/bin/lfub
 
 # pavucontrol
 alt + shift + v

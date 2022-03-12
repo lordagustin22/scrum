@@ -42,15 +42,19 @@ export DTERM="${TERMINAL} -e"   # terminal executing program variable
 export VISUAL="nvim"
 export BROWSER="brave"
 PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/ffmpeg:$HOME/.local/bin/statusbar         # path for .local/bin
-export penpath="/run/media/utane/DUAN"
+export penpath="/run/media/utane"
+export XDG_CACHE_HOME="$HOME/.cache"
 
 # ~/ Clean-up:
 export LESSHISTFILE="-"
-export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export GOPATH="XDG_CONFIG_HOME/go"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 
 # input method
 # export GTK_IM_MODULE='fcitx'

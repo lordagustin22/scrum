@@ -49,6 +49,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias hst='history | cut -c 8- | sort | uniq | fzf | tr -d '\n' | xclip -sel c'
 fi
 
+alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
+alias lf='lfub'
+
 # /dev/null aliases (no annoying stdout from programs)
 alias  \
         bra='brave > /dev/null 2>&1' \

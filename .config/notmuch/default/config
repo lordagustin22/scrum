@@ -1,0 +1,14 @@
+[database]
+path=/home/utane/.local/share/mail
+[user]
+name=niconecrofilo589
+primary_email=niconecrofilo589@gmail.com
+[new]
+tags=unread;inbox;
+ignore=.mbsyncstate;.uidvalidity
+[search]
+exclude_tags=deleted;spam;
+[maildir]
+synchronize_flags=true
+[crypto]
+gpg_path=gpg
