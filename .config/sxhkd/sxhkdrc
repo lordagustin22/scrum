@@ -1,4 +1,4 @@
-Z The simple hotkey daemon
+# The simple hotkey daemon
 # config
 
 # Kill a process
@@ -7,81 +7,29 @@ Z The simple hotkey daemon
  # super + shift + q
 #   pkill -SIGUSR1 dwm
 
+# kill
 # reboots sxhkd
-alt + Escape
-	pkill -SIGUSR1 sxhkd
+alt + {Escape,m,4}
+	{pkill -SIGUSR1 sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey}
 
-# reboots mpd
-alt + m
-	pkill -USR1 mpd && mpd
+# open GUI
+alt + {a,b,v,c,g,
+    {anki,brave,pavucontrol,galculator,gimp}
 
-# kills screenkey
-alt + 4
-	pkill -USR1 screenkey
-
-# lock screen
-alt + shift + l
-    ~/.local/bin/lock
-
-# anki
-alt + a
-    anki
-
-# browser
-alt + b
-    brave
-
-# launch dmenu
-alt + d
-    dmenu_run -i -l 10
-
-# screenkey
-alt + s
-	screenkey
-
-# screencast (or kill it)
-alt + ctrl + e
-    ~/.local/bin/dmenurecord.sh
-
-# open lf
-alt + l
-    st -e ~/.local/bin/lfub
-
-# pavucontrol
-alt + shift + v
-    pavucontrol
-
-# open ncmpcpp
-alt + w
-    st -e ncmpcpp
-
-# open htop
-alt + h
-    st -e htop
-
-# Open transmission
-alt + t
-     transmission-daemon && st -e tremc
+# open CLI
+alt + {d,s,w,h,t,z,l}
+    {dmenu_run -i -l 10,screenkey,st -e ncmpcpp,st -e htop,transmission-daemon && st -e tremc,st -e calcurse,st -e ~/.local/bin/lfub}
 
 # take screenshot
 Print
     ~/.local/bin/maimpick.sh
 
-# calculator
-super + c
-    galculator
+# record or kill
+super + Print
+    ~/.local/bin/dmenurecord
 
-# qemu
-super + v
-    virt-manager
-
-# calendar
-super + alt + c
-    st -e calcurse
-
-# gimp
-alt + g
-    gimp
+super + alt + Print
+    ~/.local/bin/killrecording
 
 # dunstctl
 # close
@@ -102,12 +50,8 @@ alt + ctrl + period
 
 # Mount/Unmount devices
 # mount android device
-alt + 2
-    go-mtpfs ~/cell
-
-# unmount android device
-alt + 3
-    fusermount -u cell/
+alt + {2,3}
+    {go-mtpfs ~/cell,fusermount -u cell/}
 
 # nullpomino
 alt + 5
