@@ -1,6 +1,6 @@
 #!/bin/sh
 sxhkd -m 1 &
-sleep 10 && dunst &
+dunst &
 unclutter &
 mpd &
 xset r rate 300 50 &

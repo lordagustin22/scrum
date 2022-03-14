@@ -79,6 +79,7 @@ k*
 /.config/QtProject.conf
 /.config/msmtp/msmmtp.log
 .Rhistory
+git-pass
 
 # Ignore filetypes
 *.txt
@@ -92,3 +93,6 @@ k*
 *.m4a
 *.ini
 *.xls
+*.webm
+*.mkv
+*.sh

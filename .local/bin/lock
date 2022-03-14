@@ -1,13 +1,11 @@
 #!/bin/sh
 
-rm /tmp/screen.png
-
 timeout=10000
 
 # Take screenshoot
-maim -u /tmp/screen.png
+sudo maim -u /tmp/screen.png
 # Blurred image
-convert /tmp/screen.png -blur 0x12 -paint 4 -colorspace Gray -bordercolor '#970C10' -border 5 /tmp/screen.png
+sudo convert /tmp/screen.png -blur 0x12 -paint 4 -colorspace Gray -bordercolor '#970C10' -border 5 /tmp/screen.png
 # or pixellate it
 # mogrify -scale 10% -scale 1000% /tmp/screen.png
 # Lock screen

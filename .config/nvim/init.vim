@@ -116,7 +116,7 @@ set nobackup
 set shiftwidth=4
 set clipboard+=unnamedplus
 set title
-set bg=dark
+set bg=light
 set nohlsearch
 set noruler
 
@@ -164,5 +164,5 @@ if !has('gui_running')
 endif
 
  let g:lightline = {
-             \ 'colorscheme': 'darcula',
+             \ 'colorscheme': 'deus',
              \ }

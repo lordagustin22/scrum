@@ -47,7 +47,6 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 # ~/ Clean-up:
 export LESSHISTFILE="-"
-export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
