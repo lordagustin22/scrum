@@ -3,3 +3,12 @@ source /usr/share/mutt-wizard/mutt-wizard.muttrc
 source /home/utane/.config/mutt/accounts/niconecrofilo589@gmail.com.muttrc
 macro index,pager i1 '<sync-mailbox><enter-command>source /home/utane/.config/mutt/accounts/niconecrofilo589@gmail.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to niconecrofilo589@gmail.com"
 macro index,pager i2 '<sync-mailbox><enter-command>source /home/utane/.config/mutt/accounts/aguscea18@gmail.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to aguscea18@gmail.com"
+macro index,pager gd "<change-folder>=[Gmail]/Borradores<enter>" "go to drafts"
+macro index,pager Md "<change-folder>=[Gmail]/Borradores<enter>" "move mail to drafts"
+macro index,pager Cd "<change-folder>=[Gmail]/Borradores<enter>" "copy mail to drafts"
+macro index,pager gj "<change-folder>=[Gmail]/Papelera<enter>" "go to junk"
+macro index,pager Mj "<change-folder>=[Gmail]/Papelera<enter>" "move mail to junk"
+macro index,pager Cj "<change-folder>=[Gmail]/Papelera<enter>" "copy mail to junk"
+macro index,pager ga "<change-folder>=[Gmail]/Importantes<enter>" "go to archive"
+macro index,pager Ma "<change-folder>=[Gmail]/Importantes<enter>" "move mail to junk"
+macro index,pager Ca "<change-folder>=[Gmail]/Importantes<enter>" "copy mail to junk"
