@@ -37,6 +37,7 @@ alias \
 	sdn="sudo shutdown -h now" \
         mk="sudo make install" \
         df="df -lH" \
+        n="neomutt" \
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
