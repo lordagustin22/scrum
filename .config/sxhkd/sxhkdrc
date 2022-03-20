@@ -17,8 +17,10 @@ alt + {a,b,v,x,g,
     {anki,brave,pavucontrol,galculator,gimp}
 
 # open CLI
-alt + {d,s,w,h,t,z,l}
-    {dmenu_run -i -l 10,screenkey,st -e ncmpcpp,st -e htop,transmission-daemon && st -e tremc,st -e calcurse,st -e ~/.local/bin/lfub}
+# alt + {d,
+alt + {s,w,h,t,z,l}
+    {screenkey,st -e ncmpcpp,st -e htop,transmission-daemon && st -e tremc,st -e calcurse,st -e ~/.local/bin/lfub}
+   # {dmenu_run -i -l 10,
 
 # take screenshot
 Print
