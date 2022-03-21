@@ -23,6 +23,7 @@
 /.config/libreoffice
 /.config/libfm
 /.config/configstore
+/.config/mutt/.mailsynclastrun
 *SoulseekQt
 k*
 
@@ -96,4 +97,7 @@ git-pass
 *.webm
 *.mkv
 *.sh
+*.log
+*.aux
 .Xauthority
+.rnd
