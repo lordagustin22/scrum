@@ -8,7 +8,6 @@ auth on
 tls on
 tls_trust_file	/etc/ssl/certs/ca-certificates.crt
 logfile /home/utane/.config/msmtp/msmtp.log
-# tls_starttls
 
 account aguscea18@gmail.com
 host smtp.gmail.com
@@ -20,5 +19,3 @@ auth on
 tls on
 tls_trust_file	/etc/ssl/certs/ca-certificates.crt
 logfile /home/utane/.config/msmtp/msmtp.log
-# tls_starttls
-
