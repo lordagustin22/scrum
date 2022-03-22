@@ -2,11 +2,7 @@
 
 dpath=~/Documentos/Bash
 list=$dpath/program-list
-if [[ ! -e $list ]]
-then
-touch $list
-fi
-echo 'Programs installed on Artix Linux as of today (includes AUR)' > $list && date '+%a %d-%m-%y' >> $list && pacman -Qq | grep -v "$(pacman -Qmq)" >> $list
+echo 'Programs installed on Artix Linux as of today (includes AUR)' > $list && date '+%a %d/%m/%y' >> $list && pacman -Qq | grep -v "$(pacman -Qmq)" >> $list
 printf '\n' >> $list
 pacman -Qmq >> $list
 notify-send --urgency=normal "Lista de programas actualizada"
