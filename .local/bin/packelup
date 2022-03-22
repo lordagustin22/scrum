@@ -1,5 +1,6 @@
 #!/bin/sh
 
+
 dpath=~/Documentos/Bash
 list=$dpath/program-list
 echo 'Programs installed on Artix Linux as of today (includes AUR)' > $list && date '+%a %d/%m/%y' >> $list && pacman -Qq | grep -v "$(pacman -Qmq)" >> $list
