@@ -55,6 +55,6 @@ alt + ctrl + period
 alt + {2,3}
     {go-mtpfs ~/cell,fusermount -u cell/}
 
-# nullpomino
+# juga do juejito nwn
 alt + 5
-    cd ~/repos/NullpoMino7_5_0 && st -e ./play_swing
+    ~/nupominwn
