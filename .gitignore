@@ -80,6 +80,10 @@ k*
 /.config/QtProject.conf
 /.config/msmtp/msmmtp.log
 .Rhistory
+nupominwn
+.Xauthority
+.rnd
+.npm
 git-pass
 
 # Ignore filetypes
@@ -99,5 +103,4 @@ git-pass
 *.sh
 *.log
 *.aux
-.Xauthority
-.rnd
+*.json
