@@ -6,6 +6,7 @@ mpd &
 xset r rate 300 50 &
 redshift &
 udiskie &
+copyq &
 ~/.local/bin/lockscreen.sh &
 ~/.local/bin/setbg &
 picom &
