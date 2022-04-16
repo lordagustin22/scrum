@@ -40,3 +40,4 @@ application/x-extension-xhtml=brave-browser.desktop
 application/x-extension-xht=brave-browser.desktop
 text/markdown=nvim.desktop
 text/calendar=nvim.desktop
+x-scheme-handler/mailto=brave-browser.desktop

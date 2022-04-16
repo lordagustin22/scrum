@@ -58,3 +58,8 @@ alt + ctrl + period
 # juga do juejito nwn
 alt + 5
     ~/repos/nullpomino/nupominwn
+
+# utilities
+# lock screen
+alt + r
+~/.local/bin/lock
