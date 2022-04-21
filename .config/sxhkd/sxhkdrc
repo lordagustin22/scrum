@@ -13,8 +13,8 @@ alt + {Escape,m,4}
 	{pkill -SIGUSR1 sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey}
 
 # open GUI
-alt + {a,b,v,x,g,o}
-    {anki,brave,pavucontrol,galculator,gimp,virt-manager}
+alt + {a,b,v,x,g,o,d}
+    {anki,brave,pavucontrol,galculator,gimp,virt-manager,obs}
 
 # open CLI
 # alt + {d,
@@ -31,7 +31,8 @@ super + Print
     ~/.local/bin/dmenurecord
 
 super + alt + Print
-    ~/.local/bin/killrecording
+    kill "$(pidof obs)"
+    # ~/.local/bin/killrecording
 
 # dunstctl
 # close

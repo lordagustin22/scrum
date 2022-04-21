@@ -1,6 +1,7 @@
 # Ignore config directory
 /.config/BraveSoftware
 /.config/filezilla
+/.config/obs-studio
 /.config/desmume
 /.config/dconf
 /.config/Meltytech

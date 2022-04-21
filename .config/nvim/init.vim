@@ -50,7 +50,7 @@ map <Leader>tk <C-w>t<C-w>K
 	map <leader>r :vsp<space>$REFER<CR>
 
 " Replace all is aliased to S.
-	 nnoremap S :%s//g<Left><Left>
+	 nnoremap S :%s//<Left>
 
 " Compile document, be it groff/LaTeX/markdown/etc.
 	map <leader>c :w! \| !compiler "<c-r>%"<CR>
