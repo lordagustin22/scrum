@@ -9,7 +9,7 @@ alias \
 alias \
  src='source ~/.bashrc && echo "updateado el bashrc COCHARL NWN"' \
  nc='$EDITOR ~/.config/$EDITOR/init.vim' \
- sxcon='$EDITOR ~/.config/sxhkd/sxhkdrc' \
+ s='$EDITOR ~/.config/sxhkd/sxhkdrc' \
 
 # general commands
 alias \
@@ -27,9 +27,8 @@ alias \
 	ffmpeg="ffmpeg -hide_banner"
 
 # Colorize commands when possible.
-alias \
-	ls="ls -hN --color=auto --group-directories-first" \
-	grep="grep --color=auto"
+	alias ls="ls -hN --color=auto --group-directories-first"
+	alias grep="grep --color=auto"
 
 # These common commands are just too long! Abbreviate them.
 alias \

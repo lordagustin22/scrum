@@ -3,6 +3,8 @@
 /.config/filezilla
 /.config/obs-studio
 /.config/PCSX2
+/.config/mednaffe
+/.config/gh
 /.config/desmume
 /.config/dconf
 /.config/Meltytech
@@ -44,20 +46,17 @@ k*
 /.cargo
 /Monero
 /.java
-/Imágenes
 /Imagenes
 /.icons
 /go
 /cell
 /.dbus
 /Descargas
+/.mednafen
 /Documentos
-/Plantillas
-/Emulation
 /Musica
 /Escritorio
 /Not_Related
-/Vídeos
 /Videos
 /.local/share
 /.local/lib
@@ -65,7 +64,6 @@ k*
 /.pki
 /vimwiki
 /.mozilla
-/Público
 /repos
 /.ssh
 /R
@@ -91,7 +89,7 @@ nupominwn
 .Xauthority
 .rnd
 .npm
-git-pass
+git-control
 
 # Ignore filetypes
 *.txt
@@ -104,6 +102,9 @@ git-pass
 *.png
 *.m4a
 *.ini
+*.zip
+*.rar
+*.7z
 *.xls
 *.webm
 *.mkv
