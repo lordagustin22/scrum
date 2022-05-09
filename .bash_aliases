@@ -37,6 +37,7 @@ alias \
         mk="sudo make install" \
         df="df -lH" \
         n="neomutt" \
+        ....="cd ../.." \
         mps="mpv --shuffle"
 
 # enable color support of ls and also add handy aliases

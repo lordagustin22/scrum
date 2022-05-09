@@ -2,6 +2,6 @@
 
 [ -f ~/.xprofile ] && . ~/.xprofile
 
- while : ; do
-    ssh-agent dwm || break
- done
+  while : ; do
+     ssh-agent dwm || break
+  done
