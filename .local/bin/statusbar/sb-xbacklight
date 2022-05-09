@@ -1,0 +1,5 @@
+#!/bin/sh
+
+backlight="$(xbacklight -get | cut -d '.' -f 1)"
+icon="💡 "
+echo "$icon$backlight"
