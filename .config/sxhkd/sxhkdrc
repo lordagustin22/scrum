@@ -9,8 +9,8 @@
 
 # kill
 # reboots sxhkd
-alt + {Escape,m,4}
-	{pkill -SIGUSR1 sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey}
+alt + {Escape,m,4,z}
+	{pkill -SIGUSR1 sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey, pkill -USR1 obs}
 
 # open GUI
 alt + {a,b,v,g,o,d}
@@ -52,15 +52,12 @@ alt + ctrl + period
     dunstctl context
 
 # Mount/Unmount devices
-# mount android device
-# alt + {2,3}
-    # {go-mtpfs ~/cell,fusermount -u cell/}
 
 # juga do juejito nwn
 alt + 5
     ~/repos/nullpomino/nupominwn
 
 # utilities
-# lock screen
-alt + r
-~/.local/bin/lock
+# mount
+alt + {2,3}
+    {simple-mtpfs --device 1 ~/Escritorio/mnt/Android, fusermount -u ~/Escritorio/mnt/Android}

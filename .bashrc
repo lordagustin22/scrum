@@ -58,6 +58,6 @@ export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 # Not supported in the "fish" shell.
 # (cat ~/.cache/wal/sequences &)
 
-se() { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | fzf | xargs -r $EDITOR ;}
+se() { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | grep -v BraveSoftware | fzf | xargs -r $EDITOR ;}
 
 . /usr/share/LS_COLORS/dircolors.sh
