@@ -23,7 +23,6 @@ alias \
 	rm="rm -vI" \
 	mkd="mkdir -pv" \
         rmd="rmdir -v" \
-	sxiv="sxiv -q -a -t" \
 	ffmpeg="ffmpeg -hide_banner"
 
 # Colorize commands when possible.
@@ -33,6 +32,7 @@ alias \
 # These common commands are just too long! Abbreviate them.
 alias \
 	z="zathura" \
+	i="sxiv -q -a -t" \
 	sdn="sudo shutdown -h now" \
         mk="sudo make install" \
         df="df -lH" \

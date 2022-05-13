@@ -10,15 +10,14 @@
 # kill
 # reboots sxhkd
 alt + {Escape,m,4,z}
-	{pkill -SIGUSR1 sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey, pkill -USR1 obs}
+	{pkill -SIGUSR1 sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey, kill -USR1 $(pidof obs)}
 
 # open GUI
 alt + {a,b,v,g,o,d}
     {anki,brave,pavucontrol,gimp,virt-manager,obs}
 
 # open CLI
-# alt + {d,
-alt + {s,w,h,t,z,l}
+alt + {s,w,h,t,c,l}
     {screenkey,st -e ncmpcpp,st -e htop,transmission-daemon && st -e tremc,st -e calcurse,st -e ~/.local/bin/lfub}
    # {dmenu_run -i -l 10,
 
