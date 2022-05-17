@@ -17,7 +17,7 @@ alt + {a,b,v,g,o,d}
     {anki,brave,pavucontrol,gimp,virt-manager,obs}
 
 # open CLI
-alt + {s,w,h,t,c,l}
+alt + {s,w,h,t,q,l}
     {screenkey,st -e ncmpcpp,st -e htop,transmission-daemon && st -e tremc,st -e calcurse,st -e ~/.local/bin/lfub}
    # {dmenu_run -i -l 10,
 
