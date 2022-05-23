@@ -9,24 +9,24 @@
 !!*background: rgba(0, 0, 0, .7)
 
 ! Dracula Xresources palette
-! *.foreground: #F8F8F2
-! *.background: #282A36
-! *.color0:     #000000
-! *.color8:     #4D4D4D
-! *.color1:     #FF5555
-! *.color9:     #FF6E67
-! *.color2:     #50FA7B
-! *.color10:    #5AF78E
-! *.color3:     #F1FA8C
-! *.color11:    #F4F99D
-! *.color4:     #BD93F9
-! *.color12:    #CAA9FA
-! *.color5:     #FF79C6
-! *.color13:    #FF92D0
-! *.color6:     #8BE9FD
-! *.color14:    #9AEDFE
-! *.color7:     #BFBFBF
-! *.color15:    #E6E6E6
+!! *.foreground: #F8F8F2
+!! *.background: #282A36
+!! *.color0:     #000000
+!! *.color8:     #4D4D4D
+!! *.color1:     #FF5555
+!! *.color9:     #FF6E67
+!! *.color2:     #50FA7B
+!! *.color10:    #5AF78E
+!! *.color3:     #F1FA8C
+!! *.color11:    #F4F99D
+!! *.color4:     #BD93F9
+!! *.color12:    #CAA9FA
+!! *.color5:     #FF79C6
+!! *.color13:    #FF92D0
+!! *.color6:     #8BE9FD
+!! *.color14:    #9AEDFE
+!! *.color7:     #BFBFBF
+!! *.color15:    #E6E6E6
 
 !! gruvbox:
 ! *.color0: #1d2021
@@ -49,25 +49,7 @@
 ! *.foreground: white
 ! *.cursorColor: white
 
-/* !! solarized */
-! *.color0:	#073642
-! *.color1:	#dc322f
-! *.color2:	#859900
-! *.color3:	#b58900
-! *.color4:	#268bd2
-! *.color5:	#d33682
-! *.color6:	#2aa198
-! *.color7:	#eee8d5
-! *.color9:	#cb4b16
-! *.color8:	#fdf6e3
-! *.color10:	#586e75
-! *.color11:	#657b83
-! *.color12:	#839496
-! *.color13:	#6c71c4
-! *.color14:	#93a1a1
-! *.color15:	#fdf6e3
-
-!! black
+!! !! black
 !! *color0: #1b1918
 !! *color8: #766e6b
 !! !! red
@@ -107,36 +89,28 @@
  #define nord14 #A3BE8C
  #define nord15 #B48EAD
 
- *.foreground:   nord4
- *.background:   nord0
- *.cursorColor:  nord4
- *fading: 35
- *fadeColor: nord3
-
- *.color0: nord1
- *.color1: nord11
- *.color2: nord14
- *.color3: nord13
- *.color4: nord9
- *.color5: nord15
- *.color6: nord8
- *.color7: nord5
- *.color8: nord3
- *.color9: nord11
- *.color10: nord14
- *.color11: nord13
- *.color12: nord9
- *.color13: nord15
- *.color14: nord7
- *.color15: nord6
-
-! URxvt.background:	[80]#282A36
-
-URxvt.intensityStyles:	true
-URxvt.font:	xft:monospace:size=11
-URxvt.scrollBar:	false
-URxvt.cursorColor:	white
-URxvt.termname:         rxvt-unicode
+!! *.foreground:   nord4
+!! *.background:   nord0
+!! *.cursorColor:  nord4
+!! *fading: 35
+!! *fadeColor: nord3
+!!
+!! *.color0: nord1
+!! *.color1: nord11
+!! *.color2: nord14
+!! *.color3: nord13
+!! *.color4: nord9
+!! *.color5: nord15
+!! *.color6: nord8
+!! *.color7: nord5
+!! *.color8: nord3
+!! *.color9: nord11
+!! *.color10: nord14
+!! *.color11: nord13
+!! *.color12: nord9
+!! *.color13: nord15
+!! *.color14: nord7
+!! *.color15: nord6
 
 Sxiv.foreground: #eeeeee
 Sxiv.background: #000000
@@ -146,3 +120,99 @@ dmenu.background: #222222
 dmenu.foreground: #8ec07c
 dmenu.selbackground: #458588
 dmenu.selforeground: #fb4934
+
+!TomorrowNightEighties
+#define t_background        #2d2d2d
+#define t_current_line      #393939
+#define t_selection      	#515151
+#define t_foreground      	#cccccc
+#define t_comment	     	#999999
+#define t_red		     	#f2777a
+#define t_orange	     	#f99157
+#define t_yellow        	#ffcc66
+#define t_green	        	#99cc99
+#define t_aqua	        	#66cccc
+#define t_blue	        	#6699cc
+#define t_purple        	#cc99cc
+
+
+!! *.foreground:   t_foreground
+!! *.background:   t_background
+!! *.cursorColor:  #aeafad
+!!
+!! ! Black / Grey
+!! *.color0:       #000000
+!! *.color8:       #666666
+!!
+!! ! Red / Bright Red
+!! *.color1:       t_red
+!! *.color9:       #FF3334
+!!
+!! ! Green + Bright Green
+!! *.color2:       t_green
+!! *.color10:      #9ec400
+!!
+!! ! Yellow (Orange) + Bright Yellow (Yellow)
+!! *.color3:       t_orange
+!! *.color11:      t_yellow
+!!
+!! ! Blue + Bright Blue
+!! *.color4:       t_blue
+!! *.color12:      t_blue
+!!
+!! ! Magenta (Purple) + Bright Magenta
+!! *.color5:       t_purple
+!! *.color13:      #b777e0
+!!
+!! ! Cyan (Aqua) + Bright Cyan
+!! *.color6:       t_aqua
+!! *.color14:      #54ced6
+!!
+!! ! Light Grey (Selection) + White (Current Line)
+!! *.color7:       t_selection
+!! *.color15:      t_current_line
+
+! special
+*.foreground:   #e4e4e4
+*.background:   #1c1c1c
+*.cursorColor:  #e4e4e4
+
+! black
+*.color0:       #1c1c1c
+*.color8:       #626262
+
+! red
+*.color1:       #af005f
+*.color9:       #af5f87
+
+! green
+*.color2:       #1c5f5f
+*.color10:      #008787
+
+! yellow
+*.color3:       #af871c
+*.color11:      #dfaf00
+
+! blue
+*.color4:       #1c5f87
+*.color12:      #5f87af
+
+! magenta
+*.color5:       #5f1c5f
+*.color13:      #875f87
+
+! cyan
+*.color6:       #005f87
+*.color14:      #0087af
+
+! white
+*.color7:       #afafaf
+*.color15:      #e4e4e4
+
+URxvt.background:	[80]#1c1c1c
+URxvt.foreground:       #e4e4e4
+URxvt.intensityStyles:	true
+URxvt.font:	xft:monospace:size=11
+URxvt.scrollBar:	false
+URxvt.cursorColor:	#5f1c5f
+URxvt.termname:         rxvt-unicode
