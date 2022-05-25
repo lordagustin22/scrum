@@ -14,49 +14,8 @@ alt + {Escape,m,4,z}
 
 # open GUI
 alt + {a,b,v,g,o,d}
-    {anki,brave,pavucontrol,gimp,virt-manager,obs}
+    {anki,brave-browser,pavucontrol,gimp,virt-manager,obs}
 
 # open CLI
 alt + {s,w,h,t,q,l}
-    {screenkey,st -e ncmpcpp,st -e htop,transmission-daemon && st -e tremc,st -e calcurse,st -e ~/.local/bin/lfub}
-   # {dmenu_run -i -l 10,
-
-# take screenshot
-Print
-    ~/.local/bin/maimpick.sh
-
-# record or kill
-super + Print
-    ~/.local/bin/dmenurecord
-
-super + alt + Print
-    kill "$(pidof obs)"
-    # ~/.local/bin/killrecording
-
-# dunstctl
-# close
-ctrl + space
-    dunstctl close
-
-# close all
-alt + ctrl + space
-    dunstctl close-all
-
-# history menu
-ctrl + period
-    dunstctl history-pop
-
-# context menu
-alt + ctrl + period
-    dunstctl context
-
-# Mount/Unmount devices
-
-# juga do juejito nwn
-alt + 5
-    ~/repos/nullpomino/nupominwn
-
-# utilities
-# mount
-alt + {2,3}
-    {simple-mtpfs --device 1 ~/Escritorio/mnt/Android, fusermount -u ~/Escritorio/mnt/Android}
+    {screenkey,urxvt -e ncmpcpp,urxvt -e htop,transmission-daemon && urxvt -e tremc,urxvt -e calcurse,urxvt -e ranger}

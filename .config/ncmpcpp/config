@@ -13,7 +13,7 @@ mpd_music_dir = "/home/utane/Musica"
 
 message_delay_time = "1"
 visualizer_in_stereo = "yes"
-visualizer_data_source = "/tmp/mpd.fifo"
+# visualizer_data_source = "/tmp/mpd.fifo"
 visualizer_output_name = "my_fifo"
 # buffer_time= "100000"
 visualizer_type = "spectrum"

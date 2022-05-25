@@ -35,9 +35,8 @@ alias \
 	i="sxiv -q -a -t" \
 	sdn="sudo shutdown -h now" \
         mk="sudo make install" \
-        df="df -lH" \
+        df="df -lH | grep -v '/dev/loop*/" \
         n="neomutt" \
-        ....="cd ../.." \
         mps="mpv --shuffle"
 
 # enable color support of ls and also add handy aliases
@@ -52,10 +51,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
-alias lf='lfub'
 
 # /dev/null aliases (no annoying stdout from programs)
 alias  \
         bra='brave > /dev/null 2>&1' \
-        pcm='pcmanfm > /dev/null 2>&1 &' \
-        picom='picom > /dev/null 2>&1 &'

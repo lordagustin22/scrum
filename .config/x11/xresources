@@ -112,15 +112,6 @@
 !! *.color14: nord7
 !! *.color15: nord6
 
-Sxiv.foreground: #eeeeee
-Sxiv.background: #000000
-
-dmenu.font: monospace
-dmenu.background: #222222
-dmenu.foreground: #8ec07c
-dmenu.selbackground: #458588
-dmenu.selforeground: #fb4934
-
 !TomorrowNightEighties
 #define t_background        #2d2d2d
 #define t_current_line      #393939
@@ -209,11 +200,21 @@ dmenu.selforeground: #fb4934
 *.color7:       #afafaf
 *.color15:      #e4e4e4
 
+
 URxvt.background:	[80]#1c1c1c
 URxvt.foreground:       #e4e4e4
 URxvt.intensityStyles:	true
 URxvt.depth:            32
 URxvt.font:	xft:monospace:size=11
 URxvt.scrollBar:	false
-URxvt.cursorColor:	#5f1c5f
+URxvt.cursorColor:	#0087af
 URxvt.termname:         rxvt-unicode
+
+Sxiv.foreground: #eeeeee
+Sxiv.background: #000000
+
+dmenu.font: monospace
+dmenu.background: #222222
+dmenu.foreground: #8ec07c
+dmenu.selbackground: #458588
+dmenu.selforeground: #fb4934
