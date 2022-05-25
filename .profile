@@ -29,9 +29,9 @@ fi
 
 # Environment variables
 export EDITOR="nvim" 		# editor env var
-export TERM="rxvt-unicode"	# getting proper colors
-export TERMINAL="urxvt"	# for terminal env
+export TERM="st-256color"	# getting proper colors
+export TERMINAL="st"	# for terminal env
 export DTERM="${TERMINAL} -e"   # terminal executing program variable
 export VISUAL="nvim"
-export BROWSER="brave"
+export BROWSER="brave-browser"
 PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/ffmpeg:$HOME/.local/bin/statusbar         # path for .local/bin

@@ -3,7 +3,7 @@
 !!*cursor: #a8a19f
 
 !! alpha value for st
-*.alpha: 0.9
+*.alpha: 0.8
 
 !!*background:		[70]#1b1918
 !!*background: rgba(0, 0, 0, .7)
