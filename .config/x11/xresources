@@ -212,6 +212,7 @@ dmenu.selforeground: #fb4934
 URxvt.background:	[80]#1c1c1c
 URxvt.foreground:       #e4e4e4
 URxvt.intensityStyles:	true
+URxvt.depth:            32
 URxvt.font:	xft:monospace:size=11
 URxvt.scrollBar:	false
 URxvt.cursorColor:	#5f1c5f
