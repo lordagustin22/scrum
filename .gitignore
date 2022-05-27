@@ -106,6 +106,7 @@ git-control
 *.rar
 *.7z
 *.xls
+*.xml
 *.webm
 *.mkv
 *.sh

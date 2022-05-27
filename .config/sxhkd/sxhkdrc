@@ -27,3 +27,7 @@ alt + r
 # open rofi
 alt + y
     ~/.local/bin/rofrun
+
+# open appimage
+alt + n
+    ~/.local/bin/appimage_run
