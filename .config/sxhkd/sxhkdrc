@@ -23,3 +23,7 @@ alt + {s,w,h,t,q,l}
 # open terminal itself
 alt + r
     st
+
+# open rofi
+alt + y
+    ~/.local/bin/rofrun
