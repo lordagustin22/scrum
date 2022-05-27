@@ -1,4 +1,0 @@
--f mp4
--f best
--o "~/Videos/youtube-dl/%(title)s.%(ext)s"
---no-mtime

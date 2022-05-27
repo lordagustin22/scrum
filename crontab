@@ -1,5 +1,0 @@
-# dom = day of month
-# mon = month
-# dow = day of week
-# m h dom mon dow       command
-10 21 * * 0           ~/.local/bin/packelup

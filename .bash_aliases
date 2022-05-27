@@ -35,7 +35,7 @@ alias \
 	i="sxiv -q -a -t" \
 	sdn="sudo shutdown -h now" \
         mk="sudo make install" \
-        df="df -lH | grep -v '/dev/loop*/" \
+        df='df -lH | grep -v "/dev/loop*"' \
         n="neomutt" \
         mps="mpv --shuffle"
 
