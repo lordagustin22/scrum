@@ -1,4 +1,6 @@
 # Ignore config directory
+.*
+snap
 /.config/BraveSoftware
 /.config/filezilla
 /.config/obs-studio
