@@ -1,7 +1,7 @@
 # so, aliases for some programs are here, as follows:
 # youtube-dl
 alias \
- yt='youtube-dl --add-metadata -i' \
+ yt='yt-dlp --add-metadata -i' \
  yta='yt -x -f bestaudio/best -o "~/Musica/dl-music/%(title)s.%(ext)s"' \
  ytp='yt -x -f bestaudio/best -o "~/Videos/Podcast/%(title)s.%(ext)s"'
 
@@ -54,4 +54,4 @@ alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 
 # /dev/null aliases (no annoying stdout from programs)
 alias  \
-        bra='brave > /dev/null 2>&1' \
+        bra='brave-browser > /dev/null 2>&1' \

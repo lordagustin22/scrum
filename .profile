@@ -25,7 +25,8 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-. "$HOME/.cargo/env"
+
+# . "$HOME/.cargo/env"
 
 # Environment variables
 export EDITOR="nvim" 		# editor env var

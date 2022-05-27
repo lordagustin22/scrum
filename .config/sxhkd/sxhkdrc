@@ -18,7 +18,7 @@ alt + {a,b,v,g,o,d}
 
 # open CLI
 alt + {s,w,h,t,q,l}
-    {screenkey,st -e ncmpcpp,st -e htop,transmission-daemon && st -e tremc,st -e calcurse,st -e ranger}
+    {screenkey,st -e ncmpcpp,st -e htop,transmission-daemon && st -e tremc,st -e calcurse,urxvt -e ranger}
 
 # open terminal itself
 alt + r
