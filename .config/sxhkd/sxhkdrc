@@ -14,20 +14,20 @@ alt + {Escape,m,4,z}
 
 # open GUI
 alt + {a,b,v,g,o,d}
-    {anki,brave-browser,pavucontrol,gimp,virt-manager,obs}
+    {anki,$BROWSER,pavucontrol,gimp,virt-manager,obs}
 
 # open CLI
 alt + {s,w,h,t,q,l}
-    {screenkey,st -e ncmpcpp,st -e htop,transmission-daemon && st -e tremc,st -e calcurse,urxvt -e ranger}
+    {screenkey,$DTERM ncmpcpp,$DTERM htop,transmission-daemon && $DTERM tremc,$DTERM calcurse,$DTERM lfub}
 
 # open terminal itself
 alt + r
-    st
+    $TERMINAL
 
 # open rofi
 alt + y
-    ~/.local/bin/rofrun
+    rofrun
 
 # open appimage
 alt + n
-    ~/.local/bin/appimage_run
+    appimage_run

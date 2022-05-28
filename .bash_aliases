@@ -35,7 +35,7 @@ alias \
 	i="sxiv -q -a -t" \
 	sdn="sudo shutdown -h now" \
         mk="sudo make install" \
-        df='df -lH | grep -v "/dev/loop*"' \
+        df='df -lH | grep -Ev "/dev/loop*|*tmpfs|none|cgroup"' \
         n="neomutt" \
         mps="mpv --shuffle"
 
@@ -54,4 +54,4 @@ alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 
 # /dev/null aliases (no annoying stdout from programs)
 alias  \
-        bra='brave-browser > /dev/null 2>&1' \
+        bra='$BROWSER > /dev/null 2>&1' \

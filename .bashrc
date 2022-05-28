@@ -33,14 +33,13 @@ fi
 
 # Environment variables
 export EDITOR="nvim" 		# editor env var
-export TERM="st-256color"	# getting proper colors
-export TERMINAL="st"	# for terminal env
+export TERM="rxvt-unicode"	# getting proper colors
+export TERMINAL="urxvt"	# for terminal env
 export DTERM="${TERMINAL} -e"   # terminal executing program variable
 export VISUAL="nvim"
-export BROWSER="brave"
+export BROWSER="brave-browser-stable"
 PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/ffmpeg:$HOME/.local/bin/statusbar         # path for .local/bin
 export penpath="/run/media/utane"
-export penroute="/media/utane"
 export XDG_CACHE_HOME="$HOME/.cache"
 
 # ~/ Clean-up:
@@ -60,5 +59,3 @@ export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 # (cat ~/.cache/wal/sequences &)
 
 se() { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | grep -v BraveSoftware | fzf | xargs -r $EDITOR ;}
-
-# . /usr/share/LS_COLORS/dircolors.sh

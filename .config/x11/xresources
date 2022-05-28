@@ -3,7 +3,7 @@
 !! alpha value for st
 *.alpha: 0.8
 
-URxvt.background:	[80]#000
+URxvt.background:	[80]#1d2021
 !! URxvt.foreground:       #e4e4e4
 URxvt.intensityStyles:	true
 URxvt.depth:            32
