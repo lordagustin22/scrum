@@ -59,3 +59,8 @@ export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 # (cat ~/.cache/wal/sequences &)
 
 se() { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | grep -v BraveSoftware | fzf | xargs -r $EDITOR ;}
+
+export GTK_IM_MODULE='fcitx'
+export QT_IM_MODULE='fcitx'
+export SDL_IM_MODULE='fcitx'
+export XMODIFIERS='@im=fcitx'

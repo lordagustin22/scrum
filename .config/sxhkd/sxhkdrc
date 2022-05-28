@@ -31,3 +31,16 @@ alt + y
 # open appimage
 alt + n
     appimage_run
+
+# dunst control
+
+# close topmost notification
+ctrl + space
+    dunstctl close
+
+# close all notifications currently being displayed
+ctrl + alt + space
+    dunstctl close-all
+
+ctrl + period
+    dunstctl history-pop

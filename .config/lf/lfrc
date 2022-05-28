@@ -23,7 +23,6 @@ set period 1
 set hiddenfiles ".*:*.aux:*.log:*.bbl:*.bcf:*.blg:*.run.xml"
 set cleaner '~/.config/lf/cleaner'
 set previewer '~/.config/lf/scope'
-set drawbox true
 set ignorecase true
 
 # cmds/functions
