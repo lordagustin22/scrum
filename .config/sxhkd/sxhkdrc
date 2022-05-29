@@ -18,7 +18,7 @@ alt + {a,b,v,g,o,d}
 
 # open CLI
 alt + {s,w,h,t,q,l}
-    {screenkey,$DTERM ncmpcpp,$DTERM htop,transmission-daemon && $DTERM tremc,$DTERM calcurse,$DTERM lfub}
+    {screenkey,$DTERM ncmpcpp,$DTERM htop,$DTERM tremc,$DTERM calcurse,$DTERM lfub}
 
 # open terminal itself
 alt + r
@@ -44,3 +44,11 @@ ctrl + alt + space
 
 ctrl + period
     dunstctl history-pop
+
+# open calculator
+XF86Calculator
+    galculator
+
+# take screenshoot
+Print
+    maimpick

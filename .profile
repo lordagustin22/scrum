@@ -30,8 +30,8 @@ fi
 
 # Environment variables
 export EDITOR="nvim" 		# editor env var
-export TERM="rxvt-unicode"	# getting proper colors
-export TERMINAL="urxvt"	# for terminal env
+export TERM="st-256color"	# getting proper colors
+export TERMINAL="st"	        # for terminal env
 export DTERM="${TERMINAL} -e"   # terminal executing program variable
 export VISUAL="nvim"
 export BROWSER="brave-browser-stable"

@@ -1,4 +1,4 @@
-#include "/home/utane/Descargas/repos/Xresources-themes/base16-gruvbox-dark-hard-256.Xresources"
+#include "/home/utane/Descargas/repos/Xresources-themes/base16-monokai-256.Xresources"
 
 !! alpha value for st
 *.alpha: 0.8

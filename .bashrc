@@ -33,8 +33,8 @@ fi
 
 # Environment variables
 export EDITOR="nvim" 		# editor env var
-export TERM="rxvt-unicode"	# getting proper colors
-export TERMINAL="urxvt"	# for terminal env
+export TERM="st-256color"	# getting proper colors
+export TERMINAL="st"	        # for terminal env
 export DTERM="${TERMINAL} -e"   # terminal executing program variable
 export VISUAL="nvim"
 export BROWSER="brave-browser-stable"
@@ -60,7 +60,9 @@ export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 
 se() { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | grep -v BraveSoftware | fzf | xargs -r $EDITOR ;}
 
-export GTK_IM_MODULE='fcitx'
-export QT_IM_MODULE='fcitx'
-export SDL_IM_MODULE='fcitx'
-export XMODIFIERS='@im=fcitx'
+export GTK_IM_MODULE='ibus'
+export QT_IM_MODULE='ibus'
+export QT4_IM_MODULE='xim'
+export CLUTTER_IM_MODULE='xim'
+export SDL_IM_MODULE='ibus'
+export XMODIFIERS='@im=ibus'
