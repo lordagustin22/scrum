@@ -37,7 +37,8 @@ alias \
         mk="sudo make install" \
         df='df -lH | grep -Ev "/dev/loop*|*tmpfs|none|cgroup"' \
         n="neomutt" \
-        mps="mpv --shuffle"
+        mps="mpv --shuffle" \
+        xp="sudo xbps-install -y"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

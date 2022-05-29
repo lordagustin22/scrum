@@ -10,7 +10,7 @@ xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources & xrdbpid=$!	# Uncomment t
 remaps &		# run the remaps script, switching caps/esc and more; check it for more info
 kill $(pidof xfce4-notifyd)
 
-autostart="fcitx mpd xcompmgr unclutter sxhkd -m 1 redshift numlockx dunst"
+autostart="mpd xcompmgr unclutter sxhkd -m 1 redshift numlockx dunst"
 
 for program in $autostart; do
 	pidof -s "$program" || "$program" &
