@@ -4,13 +4,13 @@
 # If you use startx/xinit like a Chad, this file will also be sourced.
 
 xrandr --dpi 96		# Set DPI. User may want to use a larger number for larger screens.
-# setbg &			# set the background with the `setbg` script
-# lockscreen &
+setbg &			# set the background with the `setbg` script
+lockscreen &
 xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources & xrdbpid=$!	# Uncomment to use Xresources colors/settings on startup
 remaps &		# run the remaps script, switching caps/esc and more; check it for more info
 kill $(pidof xfce4-notifyd)
 
-autostart="mpd xcompmgr unclutter sxhkd -m 1 redshift numlockx dunst"
+autostart="mpd ibus-daemon transmission-daemon xcompmgr unclutter sxhkd -m 1 redshift numlockx dunst copyq"
 
 for program in $autostart; do
 	pidof -s "$program" || "$program" &

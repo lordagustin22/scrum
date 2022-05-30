@@ -10,7 +10,7 @@ PS1="\[\e[31m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[34m\]\h\[\e[
 # setxkbmap -option 'grp:alt_shift_toggle'
 
 if [[ "$(tty)" = "/dev/tty1" ]]; then
-  	pgrep dwm || startx
+  	pgrep bspwm || startx
 fi
 
 # don't put duplicate lines or lines starting with space in the history.

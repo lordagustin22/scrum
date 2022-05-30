@@ -1,2 +1,0 @@
-#!/bin/sh
-${XDG_DESKTOP_DIR:-$HOME/Escritorio}/Cosas\ agus/SoulseekQt-2018-1-30-64bit.AppImage
