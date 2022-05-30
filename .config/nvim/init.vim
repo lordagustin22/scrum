@@ -1,5 +1,5 @@
 let mapleader ='\'
-" source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/vim-plug/plugins.vim
 
 " Goyo plugin makes text more readable when writing prose:
        map <leader>f :Goyo \| set bg=light \| set linebreak<CR>

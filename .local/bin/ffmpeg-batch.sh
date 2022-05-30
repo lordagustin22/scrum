@@ -15,6 +15,7 @@ for filename in "$srcDir"/*.$srcExt; do
     baseName=${basePath##*/}
 
     ffmpeg -i "$filename" $opts "$destDir"/"$baseName"."$destExt"
+    rm -f "$destDir"/"$baseName"."$srcExt"
 done
 
-echo "Conversion de ${srcExt} a ${destExt} completado nwn"
+notify-send "Conversion de ${srcExt} a ${destExt} completado nwn"

@@ -3,37 +3,36 @@
 
 # Kill a process
 
-# kill dwm
- # super + shift + q
-#   pkill -SIGUSR1 dwm
-
 # kill
 # reboots sxhkd
 alt + {Escape,m,4,z}
-	{pkill -SIGUSR1 sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey, kill -USR1 $(pidof obs)}
+	{pkill -USR1 -x sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey, kill -USR1 $(pidof obs)}
 
 # open GUI
-alt + {a,b,v,g,o,d}
-    {anki,$BROWSER,pavucontrol,gimp,virt-manager,obs}
+alt + {a,b,v,g,o,d,n}
+    {anki,$BROWSER,pavucontrol,gimp,virt-manager,obs,appimage_run}
 
 # open CLI
 alt + {s,w,h,t,q,l}
     {screenkey,$DTERM ncmpcpp,$DTERM htop,$DTERM tremc,$DTERM calcurse,$DTERM lfub}
 
 # open terminal itself
-alt + r
+super + Return
     $TERMINAL
 
 # open rofi
-alt + y
+super + @space
     rofrun
 
-# open appimage
-alt + n
-    appimage_run
+# open calculator
+XF86Calculator
+    galculator
+
+# take screenshoot
+Print
+    maimpick
 
 # dunst control
-
 # close topmost notification
 ctrl + space
     dunstctl close
@@ -44,11 +43,3 @@ ctrl + alt + space
 
 ctrl + period
     dunstctl history-pop
-
-# open calculator
-XF86Calculator
-    galculator
-
-# take screenshoot
-Print
-    maimpick
