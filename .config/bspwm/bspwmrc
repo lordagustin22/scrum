@@ -1,7 +1,9 @@
 #!/bin/sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x ibus-daemon > /dev/null || ibus-daemon -d
 $HOME/.config/polybar/launch.sh
+$HOME/.config/x11/xinitrc
 
 ### Monitors ###
 bspc monitor eDP1 -d 1 2 3 4 5 6 7 8 9
@@ -36,15 +38,17 @@ xdo below -t $(xdo id -n root) $(xdo id -a polybar-cliffmain_HDMI1)
 # xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_eDP1)
 # xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI1)
 
-# Rules for windows
-bspc rule -a Gimp desktop=^8 follow=on state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a mplayer2 state=floating
-bspc rule -a Screenkey manage=off
-
 bspc rule -a scratchpad sticky=on state=floating hidden=on
 # check scratchpad already running
 [ "$(ps -x | grep -c 'scratchpad')" -eq "1" ] && $TERMINAL -c scratchpad -e scratch &
 
 id=$(cat /tmp/scratchid);\
 bspc node $id --flag hidden;bspc node -f $id
+
+# Rules for windows
+bspc rule -a Gimp desktop=^8 follow=on state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a mplayer2 state=floating
+bspc rule -a Screenkey manage=off
+bspc rule -a Virt-manager desktop=^3 follow=on state=floating
+bspc rule -a obs desktop=^7 follow=on

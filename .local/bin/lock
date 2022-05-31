@@ -9,9 +9,9 @@ sudo convert /tmp/screen.png -blur 0x12 -paint 4 -colorspace Gray -bordercolor '
 # or pixellate it
 # mogrify -scale 10% -scale 1000% /tmp/screen.png
 # Lock screen
- i3lock -e -f -c 000000 -i /tmp/screen.png
+i3lock -e -f -c 000000 -i /tmp/screen.png
 
- while [[ $(pgrep -x i3lock) ]]; do
+ while  $(pgrep -x i3lock); do
      [[ $timeout -lt $(xssstate -i) ]] && xset dpms force off
      sleep 5
  done

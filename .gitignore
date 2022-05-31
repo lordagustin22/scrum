@@ -1,96 +1,21 @@
 # Ignore config directory
 .*
 snap
-/.config/BraveSoftware
-/.config/filezilla
-/.config/obs-studio
-/.config/PCSX2
-/.config/mednaffe
-/.config/gh
-/.config/desmume
-/.config/dconf
-/.config/Meltytech
-/.config/GIMP
-/.config/galculator
-/.config/fontforge
-/.config/monero-project
-/.config/qalculate
-/.config/copyq
-/.config/qtfm6
-/.config/sublime-text-2
-/.config/qt5ct
-/.config/pulse
-/.config/pcmanfm
-/.config/transmission
-/.config/transmission-daemon
-/.config/session
-/.config/shell
-/.config/nicotine
-/.config/fcitx
-/.config/neofetch
-/.config/mozc
-/.config/libreoffice
-/.config/libfm
-/.config/configstore
-/.config/mutt/.mailsynclastrun
 *SoulseekQt
 k*
 
-# vim directory
-/.config/nvim/pack
-/.config/nvim/vim-plug
-/.config/nvim/autoload
-
 # Ignore directories
-/.abook
-/.bitmonero
-/.cache
-/.cargo
 /Monero
-/.java
 /Imagenes
-/.icons
 /go
-/cell
-/.dbus
 /Descargas
-/.mednafen
 /Documentos
 /Musica
 /Escritorio
-/Not_Related
 /Videos
-/.local/share
-/.local/lib
-/.shared-ringdb
-/.pki
-/vimwiki
-/.mozilla
-/repos
-/.ssh
 /R
 
 # Ignore files
-.mbsyncrc
-.urlview
-.viminfo
-.wget-hsts
-.gtkrc-2.0
-.notmuch-config
-.bash_history
-.bash_logout
-*.git
-/.config/mpd/mpd.pid
-/.config/mpd/mpd.log
-/.config/mpd/mpdstate
-/.config/mpd/mpd.db
-/.config/QtProject.conf
-/.config/msmtp/msmmtp.log
-.Rhistory
-nupominwn
-.Xauthority
-.rnd
-.npm
 git-control
 
 # Ignore filetypes

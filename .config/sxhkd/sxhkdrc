@@ -28,6 +28,17 @@ super + @space
 XF86Calculator
     galculator
 
+# audio control
+# raise, lower it, or mute it
+XF86AudioMute
+    exec pamixer -t
+
+XF86AudioRaiseVolume
+    exec pamixer -i 3 --allow-boost
+
+XF86AudioLowerVolume
+    exec pamixer -d 3 --allow-boost
+
 # take screenshoot
 Print
     maimpick
@@ -66,7 +77,6 @@ super + y
 super + g
 	bspc node -s biggest
 
-
 # STATE/FLAGS
 
 # set the window state
@@ -76,7 +86,6 @@ super + {t,shift + t,s,f}
 # set the node flags
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
-
 
 # FOCUS/SWAP
 
