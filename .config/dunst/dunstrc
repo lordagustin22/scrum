@@ -81,8 +81,8 @@
     new_icon = /home/utane/.config/dunst/normal.png
 
 [urgency_normal]
-    background = "#458588"
-    foreground = "#ebdbb2"
+    background = "#282A2E"
+    foreground = "#C5C8C6"
     timeout = 5
     new_icon = /home/utane/.config/dunst/normal.png
 

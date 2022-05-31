@@ -2,6 +2,8 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x ibus-daemon > /dev/null || ibus-daemon -d
+pgrep -x blueman-applet || blueman-applet &
+pgre -x nm-applet || nm-applet &
 $HOME/.config/polybar/launch.sh
 $HOME/.config/x11/xinitrc
 

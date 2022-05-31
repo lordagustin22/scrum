@@ -24,6 +24,10 @@ super + Return
 super + @space
     rofrun
 
+# lock screen
+super + l
+    lock
+
 # open calculator
 XF86Calculator
     galculator
