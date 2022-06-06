@@ -16,6 +16,10 @@ alt + {a,b,v,g,o,d}
 alt + {s,w,h,t,q,l}
     {screenkey,$DTERM ncmpcpp,$DTERM htop,$DTERM tremc,$DTERM calcurse,$DTERM lfub}
 
+# soulseek or other
+alt + n
+    nicotine
+
 # open terminal itself
 super + Return
     $TERMINAL
@@ -25,7 +29,7 @@ super + @space
     rofrun
 
 # lock screen
-super + l
+super + ctrl + l
     lock
 
 # open calculator

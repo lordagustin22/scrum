@@ -35,17 +35,10 @@ bspc config urgent_border_color         "#f92672"
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #find out the name of your monitor with xrandr
-xdo below -t $(xdo id -n root) $(xdo id -a polybar-cliffmain_eDP1)
-xdo below -t $(xdo id -n root) $(xdo id -a polybar-cliffmain_HDMI1)
+# xdo below -t $(xdo id -n root) $(xdo id -a polybar-cliffmain_eDP1)
+# xdo below -t $(xdo id -n root) $(xdo id -a polybar-cliffmain_HDMI1)
 # xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_eDP1)
 # xdo below -t $(xdo id -n root) $(xdo id -a polybar-main_HDMI1)
-
-bspc rule -a scratchpad sticky=on state=floating hidden=on
-# check scratchpad already running
-[ "$(ps -x | grep -c 'scratchpad')" -eq "1" ] && $TERMINAL -c scratchpad -e scratch &
-
-id=$(cat /tmp/scratchid);\
-bspc node $id --flag hidden;bspc node -f $id
 
 # Rules for windows
 bspc rule -a Gimp desktop=^8 follow=on state=floating
@@ -54,3 +47,8 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Screenkey manage=off
 bspc rule -a Virt-manager desktop=^3 follow=on state=floating
 bspc rule -a obs desktop=^7 follow=on
+bspc rule -a Zathura state=tiled
+bspc rule -a Brave-browser desktop=^1
+bspc rule -a Nicotine desktop=^3 follow=on
+bspc rule -a Filezilla desktop=^6 follow=on
+bspc rule -a Galculator state=floating
