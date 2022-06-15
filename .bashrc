@@ -60,9 +60,6 @@ export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 
 se() { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | grep -v BraveSoftware | fzf | xargs -r $EDITOR ;}
 
-export GTK_IM_MODULE='ibus'
-export QT_IM_MODULE='ibus'
-export QT4_IM_MODULE='xim'
-export CLUTTER_IM_MODULE='xim'
-export SDL_IM_MODULE='ibus'
-export XMODIFIERS='@im=ibus'
+# export GTK_IM_MODULE='ibus'
+# export QT_IM_MODULE='ibus'
+# export XMODIFIERS='@im=ibus'
