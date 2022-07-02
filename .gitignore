@@ -5,15 +5,7 @@ snap
 k*
 
 # Ignore directories
-/Monero
-/Imagenes
-/go
-/Descargas
-/Documentos
-/Musica
-/Escritorio
-/Videos
-/R
+/*
 
 # Ignore files
 git-control

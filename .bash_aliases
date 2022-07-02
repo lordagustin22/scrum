@@ -38,7 +38,8 @@ alias \
         df='df -lH | grep -Ev "/dev/loop*|*tmpfs|none|cgroup"' \
         n="neomutt" \
         mps="mpv --shuffle" \
-        xp="sudo xbps-install -y"
+        xp="sudo xbps-install -y" \
+        desmume-cli="desmume-cli --jit-enable --3d-render GL --scale 1.8 --lang 0"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

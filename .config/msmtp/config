@@ -21,4 +21,3 @@ tls on
 tls_trust_file	/etc/ssl/certs/ca-certificates.crt
 logfile /home/utane/.config/msmtp/msmtp.log
 # tls_starttls
-
