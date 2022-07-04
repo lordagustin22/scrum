@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x blueman-applet || blueman-applet &
-pgre -x nm-applet || nm-applet &
+pgrep -x connman-ui-gtk || connman-ui-gtk &
 $HOME/.config/polybar/launch.sh
 $HOME/.config/x11/xinitrc
 

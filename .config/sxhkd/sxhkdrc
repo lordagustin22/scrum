@@ -42,10 +42,10 @@ XF86AudioMute
     exec pamixer -t
 
 XF86AudioRaiseVolume
-    exec pamixer -i 3 --allow-boost
+    exec pamixer -i 3
 
 XF86AudioLowerVolume
-    exec pamixer -d 3 --allow-boost
+    exec pamixer -d 3
 
 # take screenshoot
 Print
