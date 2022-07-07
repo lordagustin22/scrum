@@ -11,7 +11,7 @@ xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources & xrdbpid=$!	# Uncomment t
 remaps &		# run the remaps script, switching caps/esc and more; check it for more info
 kill $(pidof xfce4-notifyd)
 
-autostart="pipewire pipewire-pulse mpd transmission-daemon xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 unclutter sxhkd -m 1 numlockx dunst redshift"
+autostart="pipewire pipewire-pulse mpd transmission-daemon xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55 unclutter sxhkd -m 1 dunst redshift udiskie"
 
 for program in $autostart; do
 	pidof -s "$program" || "$program" &
