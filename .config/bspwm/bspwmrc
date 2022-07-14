@@ -2,13 +2,13 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x blueman-applet || blueman-applet &
-pgrep -x connman-ui-gtk || connman-ui-gtk &
+pgrep -x nm-applet || nm-applet &
 numlockx on &
 $HOME/.config/polybar/launch.sh
 $HOME/.config/x11/xinitrc
 
 ### Monitors ###
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9 10
 
 ### BSPWM config ###
 bspc config border_width          2

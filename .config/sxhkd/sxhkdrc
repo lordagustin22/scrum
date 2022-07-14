@@ -9,8 +9,8 @@ alt + {Escape,m,4,z}
 	{pkill -USR1 -x sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey, kill -USR1 $(pidof obs)}
 
 # open GUI
-alt + {a,b,v,g,o,d}
-    {anki,$BROWSER,pavucontrol,gimp,virt-manager,obs}
+alt + {b,v,g,o,d}
+    {$BROWSER,pavucontrol,gimp,virt-manager,obs}
 
 # open CLI
 alt + {s,w,h,t,q,l}
@@ -46,6 +46,13 @@ XF86AudioRaiseVolume
 
 XF86AudioLowerVolume
     exec pamixer -d 3
+
+# backlight control
+XF86MonBrightnessDown
+    sudo brightnessctl set 10%-
+
+XF86MonBrightnessUp
+    sudo brightnessctl set +10%
 
 # take screenshoot
 Print

@@ -34,5 +34,5 @@ export TERM="st-256color"	# getting proper colors
 export TERMINAL="st"	        # for terminal env
 export DTERM="${TERMINAL} -e"   # terminal executing program variable
 export VISUAL="nvim"
-export BROWSER="brave-browser-stable"
+export BROWSER="brave"
 PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/ffmpeg:$HOME/.local/bin/statusbar         # path for .local/bin
