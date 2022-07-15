@@ -7,8 +7,7 @@ sudo convert /tmp/screen.png -blur 0x12 -paint 4 -colorspace Gray -bordercolor '
 # or pixellate it
 # mogrify -scale 10% -scale 1000% /tmp/screen.png
 # Lock screen
-xset s on
-xset s 900
+# xset s on
+# xset s 900
 loginctl suspend
 i3lock -e -f -c 000000 -i /tmp/screen.png -n
-# xss-lock -n dim-screen.sh suspend -- i3lock -e -f -c 000000 -i /tmp/screen.png -n
