@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec xautolock -time 15 -detectsleep -locker "/home/utane/.local/bin/lock" &
