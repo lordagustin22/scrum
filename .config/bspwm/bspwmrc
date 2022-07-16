@@ -43,7 +43,7 @@ bspc rule -a obs desktop=^7 follow=on
 bspc rule -a Zathura state=tiled
 bspc rule -a Brave-browser desktop=^1
 bspc rule -a Nicotine desktop=^3 follow=on
-bspc rule -a Filezilla desktop=^6 follow=on
+bspc rule -a FileZilla desktop=^6 follow=on
 bspc rule -a Galculator state=floating
 
 
