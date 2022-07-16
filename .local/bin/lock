@@ -1,13 +1,10 @@
 #!/bin/sh
 
-# Take screenshoot
-sudo maim -u /tmp/screen.png
 # Blurred image
-sudo convert /tmp/screen.png -blur 0x12 -paint 4 -colorspace Gray -bordercolor '#970C10' -border 5 /tmp/screen.png
-# or pixellate it
-# mogrify -scale 10% -scale 1000% /tmp/screen.png
+sudo convert -blur 0x20 \
+-paint 2 \
+-bordercolor '#4c566a' -border 20x10 /home/utane/Imagenes/Backgrounds/hyperborea/1920x1080-6016747-vsevolod-ivanov-upcoming-conversation-wooden-houses.jpg
+
 # Lock screen
-# xset s on
-# xset s 900
 loginctl suspend
-i3lock -e -f -c 000000 -i /tmp/screen.png -n
+i3lock --verif-text="verificando malongo nwn" --wrong-text="jeje ta mal" --noinput-text="pero pone algo gordo choripanero" -e -f -L -i /home/utane/Imagenes/Backgrounds/hyperborea/1920x1080-6016747-vsevolod-ivanov-upcoming-conversation-wooden-houses.jpg -n
