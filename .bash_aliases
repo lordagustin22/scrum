@@ -33,6 +33,7 @@ alias \
 alias \
 	z="zathura" \
         lf="lfub" \
+        gm="git commit -m" \
 	i="sxiv -q -a -t" \
 	sdn="sudo shutdown -h now" \
         mk="sudo make install" \
