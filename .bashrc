@@ -55,6 +55,7 @@ export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
+export INPUTRC="${XDG_CONFIG_HOME:-$HOME/.config}/shell/inputrc"
 
 # Other program settings:
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
