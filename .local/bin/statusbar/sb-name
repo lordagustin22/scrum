@@ -1,4 +1,0 @@
-#!/bin/sh
-pre="名前: "
-out="$(echo $HOME | cut -d '/' -f3 | tr '[:lower:]' '[:upper:]')"
-echo "$pre$out"

@@ -1,8 +1,0 @@
-#!/bin/sh
-
-dpath=$HOME/Documentos/Bash
-list=$dpath/program-list
-echo 'Programs installed on Artix Linux as of today (includes AUR)' > $list && date '+%a %d/%m/%y %T' >> $list && pacman -Qeq | grep -v "$(pacman -Qmq)" >> $list
-printf '\n' >> $list
-pacman -Qmq >> $list
-notify-send --urgency=normal "Lista de programas actualizada"
