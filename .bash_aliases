@@ -32,6 +32,7 @@ alias \
 # These common commands are just too long! Abbreviate them.
 alias \
 	z="zathura" \
+        lf="lfub" \
 	i="sxiv -q -a -t" \
 	sdn="sudo shutdown -h now" \
         mk="sudo make install" \
