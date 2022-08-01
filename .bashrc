@@ -38,7 +38,7 @@ export TERMINAL="st"	        # for terminal env
 export DTERM="${TERMINAL} -e"   # terminal executing program variable
 export VISUAL="nvim"
 export BROWSER="brave"
-PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/ffmpeg:$HOME/.local/bin/statusbar         # path for .local/bin
+PATH=$PATH:$HOME/.local/bin:$HOME/.local/bin/ffmpeg     # path for .local/bin
 
 # ~/ Clean-up:
 export XDG_CACHE_HOME="$HOME/.cache"
@@ -152,6 +152,7 @@ ex=🎯:\
 
 se() { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | grep -v BraveSoftware | fzf | xargs -r $EDITOR ;}
 
-export GTK_IM_MODULE='ibus'
-export QT_IM_MODULE='ibus'
-export XMODIFIERS='@im=ibus'
+export GTK_IM_MODULE='fcitx5'
+export QT_IM_MODULE='fcitx5'
+export SDL_IM_MODULE='fcitx5'
+export XMODIFIERS=@im='fcitx5'

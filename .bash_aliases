@@ -40,7 +40,8 @@ alias \
         df='df -lH | grep -Ev "/dev/loop*|*tmpfs|none|cgroup"' \
         n="neomutt" \
         mps="mpv --shuffle" \
-        pn="sudo pacman -S --needed"
+        pn="sudo pacman -S --needed" \
+        pm="pcmanfm > /dev/null 2>&1"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -50,7 +51,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias vdir='vdir --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
-    alias hst='history | cut -c 8- | sort | uniq | fzf | tr -d '\n' | xclip -sel c'
+    alias hst='history | cut -c 8- | sort | uniq | fzf | tr -d '\n''
 fi
 
 alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'

@@ -1,10 +1,9 @@
 #!/bin/sh
 
 # Blurred image
-sudo convert -blur 0x20 \
--paint 2 \
--bordercolor '#4c566a' -border 20x10 /home/utane/Imagenes/Backgrounds/hyperborea/1920x1080-6016747-vsevolod-ivanov-upcoming-conversation-wooden-houses.jpg
+# convert vsevolod-lock.jpg -blur 0x20 -paint 2 -bordercolor '#4c566a' -border 20x10 /home/utane/Imagenes/Backgrounds/hyperborea/vsevolod-lock.png
+
 
 # Lock screen
 loginctl suspend
-i3lock --verif-text="verificando malongo nwn" --wrong-text="jeje ta mal" --noinput-text="pero pone algo gordo choripanero" -e -f -L -i /home/utane/Imagenes/Backgrounds/hyperborea/1920x1080-6016747-vsevolod-ivanov-upcoming-conversation-wooden-houses.jpg -n
+i3lock --verif-text="verificando malongo nwn" --wrong-text="jeje ta mal" --noinput-text="pero pone algo gordo choripanero" -e -f -L -i /home/utane/Imagenes/Backgrounds/hyperborea/vsevolod-lock.png -n

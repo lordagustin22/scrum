@@ -3,12 +3,16 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x blueman-applet || blueman-applet &
 pgrep -x nm-applet || nm-applet &
+pgrep -x redshift-gtk || redshift-gtk &
 numlockx on &
 $HOME/.config/polybar/launch.sh
 $HOME/.config/x11/xinitrc
 
+# Polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
 ### Monitors ###
-bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor eDP1 -d 1 2 3 4 5 6 7 8 9
 
 ### BSPWM config ###
 bspc config border_width          2
@@ -43,6 +47,7 @@ bspc rule -a obs desktop=^7 follow=on
 bspc rule -a Zathura state=tiled
 bspc rule -a Brave-browser desktop=^1
 bspc rule -a Nicotine desktop=^3 follow=on
+bspc rule -a SoulseekQt desktop=^3 follow=on
 bspc rule -a FileZilla desktop=^6 follow=on
 bspc rule -a Galculator state=floating
 
