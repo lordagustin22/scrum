@@ -2,9 +2,6 @@
 # config
 
 # Kill a process
-
-# kill
-# reboots sxhkd
 alt + {Escape,m,4,z}
 	{pkill -USR1 -x sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey, kill -USR1 $(pidof obs)}
 
@@ -46,6 +43,13 @@ XF86AudioRaiseVolume
 
 XF86AudioLowerVolume
     exec pamixer -d 3
+
+# toggle between audio pause/play
+XF86AudioPause
+    mpc pause
+
+XF86AudioPlay
+    mpc play
 
 # backlight control
 XF86MonBrightnessDown
