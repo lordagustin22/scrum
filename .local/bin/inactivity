@@ -1,3 +1,5 @@
 #!/bin/sh
 
-exec xautolock -time 15 -detectsleep -locker "/home/utane/.local/bin/lock" &
+exec xidlehook --not-when-fullscreen --not-when-audio --detect-sleep --timer 600 "lock2" - &
+
+exec xidlehook --not-when-fullscreen --not-when-audio --detect-sleep --timer 720 "loginctl suspend" -

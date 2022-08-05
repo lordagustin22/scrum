@@ -51,6 +51,10 @@ XF86AudioPause
 XF86AudioPlay
     mpc play
 
+# go to next song
+XF86AudioNext
+    mpc next
+
 # backlight control
 XF86MonBrightnessDown
     sudo brightnessctl set 5%-
