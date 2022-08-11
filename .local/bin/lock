@@ -5,9 +5,15 @@
 
 
 # Lock screen
+lock() {
+    i3lock --verif-text="verificando malongo nwn" --wrong-text="jeje ta mal" --noinput-text="pero pone algo gordo choripanero" -e -f -L -i /home/utane/Imagenes/Backgrounds/hyperborea/vsevolod-lock.png -n
+}
 
 case "$(printf "Bloquear\\nSuspender" | rofi -dmenu -l 2 -i -p "Qué desea hacer?")" in
-    "Bloquear") locking="$(i3lock --verif-text="verificando malongo nwn" --wrong-text="jeje ta mal" --noinput-text="pero pone algo gordo choripanero" -e -f -L -i /home/utane/Imagenes/Backgrounds/hyperborea/vsevolod-lock.png -n)" ;;
-
-    "Suspender") loginctl suspend && i3lock --verif-text="verificando malongo nwn" --wrong-text="jeje ta mal" --noinput-text="pero pone algo gordo choripanero" -e -f -L -i /home/utane/Imagenes/Backgrounds/hyperborea/vsevolod-lock.png -n ;;
+    "Bloquear") lock ;;
+    "Suspender") loginctl suspend && lock ;;
 esac
+
+if [ xssstate -i >= 600000 ]; then
+    lock;
+fi

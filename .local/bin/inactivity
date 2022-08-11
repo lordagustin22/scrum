@@ -1,5 +1,5 @@
 #!/bin/sh
 
-exec xidlehook --not-when-fullscreen --not-when-audio --detect-sleep --timer 600 "lock2" - &
+exec xidlehook --not-when-fullscreen --not-when-audio --detect-sleep --timer 600 "lock" - &
 
-exec xidlehook --not-when-fullscreen --not-when-audio --detect-sleep --timer 720 "loginctl suspend" -
+exec xidlehook --not-when-fullscreen --not-when-audio --detect-sleep --timer 900 "loginctl suspend" -
