@@ -6,8 +6,8 @@ alt + {Escape,m,4,z}
 	{pkill -USR1 -x sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey, kill -USR1 $(pidof obs)}
 
 # open GUI
-alt + {b,p,g,o,d}
-    {$BROWSER,pavucontrol,gimp,virt-manager,obs}
+alt + {a, b,p,g,o,d}
+    {anki, $BROWSER,pavucontrol,gimp,virt-manager,obs}
 
 # open CLI
 alt + {s,w,h,t,q,l}
