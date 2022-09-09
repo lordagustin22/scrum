@@ -3,7 +3,8 @@
 alias \
  yt='yt-dlp --add-metadata -i' \
  yta='yt -x -f bestaudio/best -o "~/Musica/dl-music/%(title)s.%(ext)s"' \
- ytp='yt -x -f bestaudio/best -o "~/Videos/Podcast/%(title)s.%(ext)s"'
+ ytp='yt -x -f bestaudio/best -o "~/Videos/Podcast/%(title)s.%(ext)s"' #for podcasts or audiobooks
+ alias ytn='yt -o "./%(title)s.%(ext)s"'
 
 # bashrc/other configs
 alias \

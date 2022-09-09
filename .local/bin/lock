@@ -13,7 +13,3 @@ case "$(printf "Bloquear\\nSuspender" | rofi -dmenu -l 2 -i -p "Qué desea hacer
     "Bloquear") lock ;;
     "Suspender") loginctl suspend && lock ;;
 esac
-
-if [ xssstate -i >= 600000 ]; then
-    lock;
-fi

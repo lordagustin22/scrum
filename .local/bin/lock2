@@ -1,8 +1,4 @@
 #!/bin/sh
 
-# Blurred image
-# convert vsevolod-lock.jpg -blur 0x20 -paint 2 -bordercolor '#4c566a' -border 20x10 /home/utane/Imagenes/Backgrounds/hyperborea/vsevolod-lock.png
-
-
 # Lock screen
 i3lock --verif-text="verificando malongo nwn" --wrong-text="jeje ta mal" --noinput-text="pero pone algo gordo choripanero" -e -f -L -i /home/utane/Imagenes/Backgrounds/hyperborea/vsevolod-lock.png -n
