@@ -1,0 +1,9 @@
+#!/bin/sh
+font="/home/utane/Documentos/mincho.tex"
+
+pandoc \
+$1.rmd \
+-t $2 \
+-o $1.pdf \
+--pdf-engine=xelatex \
+-H $font
