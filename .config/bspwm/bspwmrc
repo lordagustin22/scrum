@@ -38,7 +38,7 @@ bspc config urgent_border_color 	"#dd2727"
 
 
 # Rules for windows
-bspc rule -a Gimp desktop=^8 follow=on state=tiled
+bspc rule -a Gimp desktop=^2 follow=on state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a mplayer2 state=floating
 bspc rule -a Screenkey manage=off
@@ -46,10 +46,10 @@ bspc rule -a Virt-manager desktop=^3 follow=on state=floating
 bspc rule -a obs desktop=^7 follow=on
 bspc rule -a Zathura state=tiled
 bspc rule -a Brave-browser desktop=^1
-bspc rule -a Nicotine desktop=^3 follow=on
 bspc rule -a SoulseekQt desktop=^3 follow=on
 bspc rule -a FileZilla desktop=^6 follow=on
 bspc rule -a Galculator state=floating
+bspc rule -a anki desktop=^2 follow=on
 
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
