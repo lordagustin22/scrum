@@ -40,7 +40,8 @@ alias \
 	i="sxiv -q -a -t" \
 	sdn="sudo shutdown -h now" \
         mk="sudo make install" \
-        df='df -lH | grep -Ev "/dev/loop*|*tmpfs|none|cgroup"' \
+        df='df -lH ' \
+        #| grep -Ev "/dev/loop*|*tmpfs|none|cgroup"
         n="neomutt" \
         mps="mpv --shuffle" \
         pn="sudo pacman -S --needed" \
