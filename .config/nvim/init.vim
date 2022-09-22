@@ -56,7 +56,7 @@ map <Leader>tk <C-w>t<C-w>K
 	map <leader>c :w! \| !compiler "<c-r>%"<CR>
 
 " Compile slide with pandoc
-        map <leader>e :!pandoc % -t beamer -o slide.pdf<CR>
+        map <leader>e :!pandoc % -t beamer -o %.pdf<CR>
 
 " Open corresponding .pdf/.html or preview
 	map <leader>p :!opout <c-r>%<CR><CR>
