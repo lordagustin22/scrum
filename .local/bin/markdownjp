@@ -1,7 +1,8 @@
 #!/bin/sh
-font="/home/utane/Documentos/mincho.tex"
+# font="/home/utane/Documentos/mincho.tex"
 
 pandoc \
+-V 'mainfont: IPAMincho.ttf' \
 $1.rmd \
 -t $2 \
 -o $1.pdf \

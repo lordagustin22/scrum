@@ -49,7 +49,8 @@ bspc rule -a Brave-browser desktop=^1
 bspc rule -a SoulseekQt desktop=^3 follow=on
 bspc rule -a FileZilla desktop=^6 follow=on
 bspc rule -a Galculator state=floating
-bspc rule -a anki desktop=^2 follow=on
+bspc rule -a Anki desktop=^2 follow=on
+bspc rule -a KeePassXC desktop=^5 follow=on
 
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...

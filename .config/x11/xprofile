@@ -29,5 +29,3 @@ export XMODIFIERS=@im='fcitx5'
 # export GTK_IM_MODULE DEFAULT=xim
 # export QT_IM_MODULE  DEFAULT=xim
 fcitx5 -dr &
-
-# ibus-daemon -drxR

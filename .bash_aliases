@@ -3,8 +3,9 @@
 alias \
  yt='yt-dlp --add-metadata -i' \
  yta='yt -x -f bestaudio/best -o "~/Musica/dl-music/%(title)s.%(ext)s"' \
- ytp='yt -x -f bestaudio/best -o "~/Videos/Podcast/%(title)s.%(ext)s"' #for podcasts or audiobooks
- alias ytn='yt -o "./%(title)s.%(ext)s"'
+#for podcasts or audiobooks
+ ytp='yt -x -f bestaudio/best -o "~/Videos/Podcast/%(title)s.%(ext)s"' \
+ alias ytn='yt --embed-thumbnail --embed-metadata -o "./%(title)s.%(ext)s"'
 
 # bashrc/other configs
 alias \
@@ -15,7 +16,8 @@ alias \
 # general commands
 alias \
  v='$EDITOR' \
- suvi='sudo $EDITOR'
+ suvi='sudo $EDITOR' \
+ fontlist='fc-list'
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
@@ -60,3 +62,4 @@ alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
 # /dev/null aliases (no annoying stdout from programs)
 alias  \
         bra='$BROWSER > /dev/null 2>&1' \
+	a='anki &'
