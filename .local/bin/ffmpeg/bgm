@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# Add background music to a video with ffmpeg
 video=$1
 # bgm_dir=$2
 bgm=$2
