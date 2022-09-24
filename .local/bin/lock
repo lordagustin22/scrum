@@ -4,7 +4,7 @@
 route=($HOME/Imagenes/Backgrounds/hyperborea)
 
 # Blurred image
-if [[ ! -e "hyperborea-blur.png" ]]; then
+if ! [[ -e $route/hyperborea-blur.png ]]; then
     convert $route/hyperborea.jpeg -blur 0x20 -paint 2 -bordercolor '#4c566a' -border 10x10 $route/hyperborea-blur.png
 fi
 
