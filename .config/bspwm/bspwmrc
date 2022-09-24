@@ -1,6 +1,6 @@
 #!/bin/sh
 
-pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x sxhkd || sxhkd &
 pgrep -x blueman-applet || blueman-applet &
 pgrep -x nm-applet || nm-applet &
 pgrep -x redshift-gtk || redshift-gtk &
