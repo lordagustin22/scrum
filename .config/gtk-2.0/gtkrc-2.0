@@ -3,7 +3,7 @@
 
 include "/home/utane/.gtkrc-2.0.mine"
 gtk-theme-name="Adapta-Nokto"
-gtk-icon-theme-name="Adwaita"
+gtk-icon-theme-name="zafiro-dark"
 gtk-font-name="Sans 10"
 gtk-cursor-theme-name="Premium"
 gtk-cursor-theme-size=0
