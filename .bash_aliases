@@ -1,7 +1,7 @@
 # so, aliases for some programs are here, as follows:
 # youtube-dl
 alias \
- yt='yt-dlp --add-metadata -i' \
+ yt='yt-dlp --embed-thumbnail --embed-metadata --add-metadata -i' \
  yta='yt -x -f bestaudio/best -o "~/Musica/dl-music/%(title)s.%(ext)s"' \
 #for podcasts or audiobooks
  ytp='yt -x -f bestaudio/best -o "~/Videos/Podcast/%(title)s.%(ext)s"' \
