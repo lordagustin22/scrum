@@ -152,6 +152,8 @@ ex=🎯:\
 
 se() { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | grep -v BraveSoftware | fzf | xargs -r $EDITOR ;}
 
+px() { pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)' ;}
+
 export GTK_IM_MODULE='fcitx5'
 export QT_IM_MODULE='fcitx5'
 export SDL_IM_MODULE='fcitx5'

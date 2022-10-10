@@ -18,6 +18,10 @@ text/markdown=nvim.desktop;
 application/pdf=org.gnome.Evince.desktop;org.pwmt.zathura-pdf-mupdf.desktop;org.pwmt.zathura-pdf-poppler.desktop;
 text/calendar=nvim.desktop;
 text/plain=nvim.desktop;
+audio/x-vorbis+ogg=mpv.desktop;
+audio/mpeg=mpv.desktop;
+application/x-ms-dos-executable=wine.desktop;
+application/x-desktop=gog_com-Higurashi_When_They_Cry_Hou_Ch_8_Matsuribayashi_1.desktop;
 
 [Default Applications]
 video/x-matroska=mpv.desktop;

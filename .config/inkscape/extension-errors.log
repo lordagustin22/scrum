@@ -1,9 +1,3 @@
-La extensión Export to PDF via Scribus» no se ha cargado porque no se cumplió una dependencia.
-Dependencia:
-	tipo: executable
-	localización: trayecto
-	cadena: scribus
-
 La extensión XFIG Input» no se ha cargado porque no se cumplió una dependencia.
 Dependencia:
 	tipo: executable
@@ -16,9 +10,9 @@ Dependencia:
 	localización: trayecto
 	cadena: optipng
 
-La extensión LaTeX (pdflatex)» no se ha cargado porque no se cumplió una dependencia.
+La extensión Export to PDF via Scribus» no se ha cargado porque no se cumplió una dependencia.
 Dependencia:
 	tipo: executable
 	localización: trayecto
-	cadena: pdflatex
+	cadena: scribus
 
