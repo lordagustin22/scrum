@@ -1,0 +1,5 @@
+#!/bin/sh
+
+estado="$(cat /sys/class/power_supply/BAT0/status)"
+capacidad="$(cat /sys/class/power_supply/BAT0/capacity)"
+[[ $estado == "Discharging" ]] && [[ $capacidad -le 20 ]] && notify-send --urgency=critical -w "Cuidado, la capacidad de la batería está por debajo de $capacidad"
