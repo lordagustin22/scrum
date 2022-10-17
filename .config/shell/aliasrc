@@ -1,8 +1,12 @@
 #!/bin/sh
 
-# so, aliases for some programs are here, as follows:
+# Use neovim for vim if present.
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
-se() { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | grep -v BraveSoftware | fzf | xargs -r $EDITOR ;}
+# Use $XINITRC variable if file exists.
+[ -f "$XINITRC" ] && alias startx="startx $XINITRC"
+
+# so, aliases for some programs are here, as follows:
 
 # youtube-dl
 alias \
@@ -15,7 +19,7 @@ alias \
 alias \
  src='source ~/.bashrc && echo "updateado el bashrc COCHARL NWN"' \
  nc="$EDITOR ~/.config/$EDITOR/init.vim" \
- s="$EDITOR ~/.config/sxhkd/sxhkdrc" \
+ s="$EDITOR ~/.config/sxhkd/sxhkdrc"
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
@@ -40,6 +44,7 @@ alias \
         mps="mpv --shuffle" \
         pn="sudo pacman -S --needed" \
         v="$EDITOR" \
+        src="source .zprofile && source .zshrc"
 
 # enable color support of ls and also add handy aliases
 alias \
@@ -52,11 +57,13 @@ alias \
     diff="diff --color=auto" \
     ip="ip --color=auto"
 
-alias \
-	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
+# alias \
+	# ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
 
 # /dev/null aliases (no annoying stdout from programs)
 alias  \
         bra='$BROWSER > /dev/null 2>&1' \
         pm="pcmanfm > /dev/null 2>&1" \
 	a='anki > /dev/null 2>&1 &'
+
+se() { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | grep -v BraveSoftware | fzf | xargs -r $EDITOR ;}
