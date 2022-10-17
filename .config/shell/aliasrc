@@ -1,4 +1,9 @@
+#!/bin/sh
+
 # so, aliases for some programs are here, as follows:
+
+se() { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | grep -v BraveSoftware | fzf | xargs -r $EDITOR ;}
+
 # youtube-dl
 alias \
  yt='yt-dlp --embed-thumbnail --embed-metadata --add-metadata -i' \
@@ -9,14 +14,8 @@ alias \
 # bashrc/other configs
 alias \
  src='source ~/.bashrc && echo "updateado el bashrc COCHARL NWN"' \
- nc='$EDITOR ~/.config/$EDITOR/init.vim' \
- s='$EDITOR ~/.config/sxhkd/sxhkdrc' \
-
-# general commands
-alias \
- v='$EDITOR' \
- suvi='sudo $EDITOR' \
- fontlist='fc-list'
+ nc="$EDITOR ~/.config/$EDITOR/init.vim" \
+ s="$EDITOR ~/.config/sxhkd/sxhkdrc" \
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
@@ -27,39 +26,37 @@ alias \
         rmd="rmdir -v" \
 	ffmpeg="ffmpeg -hide_banner"
 
-# Colorize commands when possible.
-	alias ls="ls -hN --color=auto --group-directories-first"
-	alias grep="grep --color=auto"
-
 # These common commands are just too long! Abbreviate them.
 alias \
 	z="zathura" \
+        ka="killal" \
         lf="lfub" \
-        gm="git commit -m" \
+        g="git" \
 	i="sxiv -q -a -t" \
 	sdn="sudo shutdown -h now" \
         mk="sudo make install" \
         df='df -lH ' \
-        #| grep -Ev "/dev/loop*|*tmpfs|none|cgroup"
         n="neomutt" \
         mps="mpv --shuffle" \
         pn="sudo pacman -S --needed" \
-        pm="pcmanfm > /dev/null 2>&1"
+        v="$EDITOR" \
 
 # enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-    alias hst='history | cut -c 8- | sort | uniq | fzf | tr -d '\n''
-fi
+alias \
+    ls="ls -hN --color=auto --group-directories-first" \
+    dir="dir --color=auto" \
+    vdir="vdir --color=auto" \
+    grep="grep --color=auto" \
+    fgrep="fgrep --color=auto" \
+    egrep="egrep --color=auto" \
+    diff="diff --color=auto" \
+    ip="ip --color=auto"
 
-alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
+alias \
+	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
 
 # /dev/null aliases (no annoying stdout from programs)
 alias  \
         bra='$BROWSER > /dev/null 2>&1' \
-	a='anki &'
+        pm="pcmanfm > /dev/null 2>&1" \
+	a='anki > /dev/null 2>&1 &'
