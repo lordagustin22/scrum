@@ -17,7 +17,6 @@ alias \
 
 # bashrc/other configs
 alias \
- src='source ~/.bashrc && echo "updateado el bashrc COCHARL NWN"' \
  nc="$EDITOR ~/.config/$EDITOR/init.vim" \
  s="$EDITOR ~/.config/sxhkd/sxhkdrc"
 
