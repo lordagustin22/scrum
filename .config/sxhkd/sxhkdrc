@@ -11,7 +11,7 @@ alt + {a,b,p,g,o,d,c,x}
 
 # open CLI
 alt + {s,w,h,t,q,l}
-    {screenkey,$DTERM ncmpcpp,$DTERM htop,$DTERM tremc,$DTERM calcurse, $DTERM lfub}
+    {screenkey,st -e ncmpcpp,st -e htop,st -e tremc,st -e calcurse, st -e lfub}
 
 # soulseek or other
 alt + n
