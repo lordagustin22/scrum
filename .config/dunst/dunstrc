@@ -74,15 +74,17 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#282828"
-    foreground = "#928374"
-    timeout = 5
+    background = "#2e3436"
+    foreground = "#eeeeec"
+    frame_color = "#729fcf"
+    timeout = 3
     # Icon for notifications with low urgency, uncomment to enable
     new_icon = /home/utane/.config/dunst/normal.png
 
 [urgency_normal]
-    background = "#282A2E"
-    foreground = "#C5C8C6"
+    background = "#3465a4"
+    foreground = "#eeeeec"
+    frame_color = "#729fcf"
     timeout = 5
     new_icon = /home/utane/.config/dunst/normal.png
 
