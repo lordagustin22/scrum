@@ -15,7 +15,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export TERMINAL="st"
 export TERM="st-256color"
-export BROWSER="brave"
+export BROWSER="firefox-developer-edition"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"

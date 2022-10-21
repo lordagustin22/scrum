@@ -7,11 +7,11 @@ alt + {Escape,m,4,z}
 
 # open GUI
 alt + {a,b,p,g,o,d,c,x}
-    {anki,$BROWSER,pavucontrol,gimp,virt-manager,obs,keepassxc,lxappearance}
+    {anki,$BROWSER,pavucontrol,gimp,virt-manager,obs,keepassxc,./.local/bin/fix_cursor}
 
 # open CLI
-alt + {s,w,h,t,q,l}
-    {screenkey,st -e ncmpcpp,st -e htop,st -e tremc,st -e calcurse, st -e lfub}
+alt + {s,w,h,t,q}
+    {screenkey,st -e ncmpcpp,st -e htop,st -e tremc,st -e calcurse}
 
 # soulseek or other
 alt + n

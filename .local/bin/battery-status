@@ -15,5 +15,5 @@
               notify-send --urgency=CRITICAL "Battery Low" "Level: ${battery_level}%"
            fi
        fi
-     sleep 500
+     sleep 1500
 done

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-kill $(pgrep -x sxhkd)
-sleep 1
-sxhkd &

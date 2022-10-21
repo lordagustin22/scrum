@@ -27,12 +27,13 @@ alias \
 	rm="rm -vI" \
 	mkd="mkdir -pv" \
         rmd="rmdir -v" \
-	ffmpeg="ffmpeg -hide_banner"
+	ffmpeg="ffmpeg -hide_banner" \
+        du="du -h"
 
 # These common commands are just too long! Abbreviate them.
 alias \
 	z="zathura" \
-        ka="killal" \
+        ka="killall" \
         lf="lfub" \
         g="git" \
 	i="sxiv -q -a -t" \
@@ -43,7 +44,7 @@ alias \
         mps="mpv --shuffle" \
         pn="sudo pacman -S --needed" \
         v="$EDITOR" \
-        src="source .zprofile && source .zshrc"
+        src="source ~/.config/shell/profile && source .zshrc"
 
 # enable color support of ls and also add handy aliases
 alias \
