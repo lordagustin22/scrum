@@ -1,5 +1,6 @@
 #!/bin/sh
 var="pitoncha culo dduan"
+torrent="unarchivo_peer.torrent"
 
 echo -n "The variable is a string: "
 echo $var
@@ -27,3 +28,5 @@ echo "${var#*d}" && echo "${var#* }"
 # This one deletes everything it can from the first word until it finds a d, in which case it's going to remove both of them. Then, it's also going to delete as many spaces as possible, from the first word onwards (so, the two spaces). This is greedy, i.e, it'll consume as much as possible.
 echo -n "Remove suffix (greedy): "
 echo "${var##*d}" && echo "${var##* }"
+
+echo "${torrent#*.}"

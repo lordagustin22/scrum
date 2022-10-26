@@ -3,7 +3,7 @@
 pgrep -x sxhkd || sxhkd &
 pgrep -x blueman-applet || blueman-applet &
 pgrep -x nm-applet || nm-applet &
-pgrep -x redshift-gtk || redshift-gtk &
+killall -q redshift || redshift-gtk &
 numlockx on &
 $HOME/.config/polybar/launch.sh
 $HOME/.config/x11/xinitrc
@@ -49,7 +49,7 @@ bspc rule -a Brave-browser desktop=^1
 bspc rule -a SoulseekQt desktop=^3 follow=on
 bspc rule -a FileZilla desktop=^6 follow=on
 bspc rule -a Galculator state=floating
-bspc rule -a Anki desktop=^2 follow=on
+bspc rule -a Anki follow=on
 bspc rule -a KeePassXC desktop=^5 follow=on
 bspc rule -a Lxappearance desktop=^2
 bspc rule -a firefoxdeveloperedition desktop=^1
