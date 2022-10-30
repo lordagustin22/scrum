@@ -11,7 +11,7 @@
        fi
 
        if [ $ac_power -eq 0 ]; then
-           if [ $battery_level -le 20 ]; then
+           if [ $battery_level -le 30 ]; then
               notify-send --urgency=CRITICAL "Battery Low" "Level: ${battery_level}%"
            fi
        fi

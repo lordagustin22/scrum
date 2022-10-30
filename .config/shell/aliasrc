@@ -66,4 +66,6 @@ alias  \
         pm="pcmanfm > /dev/null 2>&1" \
 	a='anki > /dev/null 2>&1 &'
 
-se() { du -a ~/.local/bin/* ~/.config/* | awk '{print $2}' | grep -v BraveSoftware | fzf | xargs -r $EDITOR ;}
+con() { cd ~/.config; $EDITOR $(fzf) ;}
+
+se() { cd ~/.local/bin; $EDITOR $(fzf) ;}
