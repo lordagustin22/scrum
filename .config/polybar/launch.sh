@@ -1,6 +1,12 @@
 #!/bin/sh
 
 # Terminate already running bar instances
+if [ $(uptime | cut -d ' ' -f4) -le 1 ]; then
+    lxappearance &
+    sleep 1
+    killall -q lxappearance
+fi
+battery-status &        # notify when battery is less than 20
 killall -q polybar
 # If all your bars have ipc enabled, you can also use
 # polybar-msg cmd quit

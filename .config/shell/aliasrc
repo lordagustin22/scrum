@@ -43,6 +43,7 @@ alias \
         n="neomutt" \
         mps="mpv --shuffle" \
         pn="sudo pacman -S --needed" \
+        p="paru" \
         v="$EDITOR" \
         src="source ~/.config/shell/profile && source .zshrc"
 

@@ -3,8 +3,9 @@
 pgrep -x sxhkd || sxhkd &
 pgrep -x blueman-applet || blueman-applet &
 pgrep -x nm-applet || nm-applet &
-killall -q redshift || redshift-gtk &
+pgrep -x redshift-gtk || redshift-gtk &
 numlockx on &
+fcitx5 -dr -s 3 &
 $HOME/.config/polybar/launch.sh
 $HOME/.config/x11/xinitrc
 
