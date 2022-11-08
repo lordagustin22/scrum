@@ -50,3 +50,4 @@ x-scheme-handler/about=brave-browser.desktop
 x-scheme-handler/unknown=brave-browser.desktop
 text/plain=nvim.desktop
 application/vnd.comicbook-rar=org.pwmt.zathura-cb.desktop
+x-scheme-handler/msteams=teams.desktop

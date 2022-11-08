@@ -43,9 +43,10 @@ alias \
         n="neomutt" \
         mps="mpv --shuffle" \
         pn="sudo pacman -S --needed" \
-        p="paru" \
+        pa="paru" \
+        p="sudo pacman" \
         v="$EDITOR" \
-        src="source ~/.config/shell/profile && source .zshrc"
+        src="source ~/.config/shell/profile && source .zshrc && source ~/.config/shell/aliasrc"
 
 # enable color support of ls and also add handy aliases
 alias \
