@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Terminate already running bar instances
-if [ $(uptime | cut -d ' ' -f4) -le 1 ]; then
+if [ $(uptime | cut -d ' ' -f4) -le 3 ]; then
     lxappearance &
     sleep 1
     killall -q lxappearance
