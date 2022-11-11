@@ -1,0 +1,18 @@
+# this is a snippet of the touchpad libinput driver
+# basically, this would go in the file /usr/share/X11/xorg.conf.d/40-libinput.conf
+# the only things that should be added are all of the options that I've added here
+# otherwise, if the first part that goes before the options isn't in the file for some reason, you should just include it all
+# you can also include this as its own file in the same directory (xorg.conf.d) as 30-touchpad.conf
+# remember that if there's a synaptics driver file in xorg.conf.d which takes precedence over this file, you should either
+# delete it, or rename it with a lower priority number (such as 40)
+# go to the arch wiki for more information
+Section "InputClass"
+        Identifier "libinput touchpad catchall"
+        MatchIsTouchpad "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+     	Option "Tapping" "on"
+     	Option "NaturalScrolling" "off"
+     	Option "ClickMethod" "clickfinger"
+     	Option "DisableWhileTyping" "true"
+EndSection
