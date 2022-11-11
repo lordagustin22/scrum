@@ -168,4 +168,4 @@ endif
 
  let g:lightline = {
              \ 'colorscheme': 'nord',
-             \ }
+            \ }
