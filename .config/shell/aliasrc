@@ -45,8 +45,11 @@ alias \
         pn="sudo pacman -S --needed" \
         pa="paru" \
         p="sudo pacman" \
+        ne="neofetch" \
         v="$EDITOR" \
-        src="source ~/.config/shell/profile && source .zshrc && source ~/.config/shell/aliasrc"
+        t="tmux" \
+        h="htop" \
+        src="source ~/.config/shell/profile && source ~/.zshrc && source ~/.config/shell/aliasrc"
 
 # enable color support of ls and also add handy aliases
 alias \
@@ -66,7 +69,7 @@ alias \
 alias  \
         bra='$BROWSER > /dev/null 2>&1' \
         pm="pcmanfm > /dev/null 2>&1" \
-	a='anki > /dev/null 2>&1 &'
+	# a='anki > /dev/null 2>&1 &'
 
 con() { cd ~/.config; $EDITOR $(fzf) ;}
 

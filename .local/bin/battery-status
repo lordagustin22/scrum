@@ -2,18 +2,18 @@
 
  while true
     do
-        ac_power=$(acpi -b | grep -c "Charging")
-       battery_level=`acpi -b | grep -P -o '[0-9]+(?=%)'`
-       if [ $ac_power -eq 1 ]; then
-           if [ $battery_level -ge 95 && $battery_level -le 97 ]; then
-              notify-send "Battery Full" "Level: ${battery_level}% "
-           fi
-       fi
-
+        # ac_power=$(acpi -b | grep -c "Charging")
+#        battery_level=`acpi -b | grep -P -o '[0-9]+(?=%)'`
+#        if [ $ac_power -eq 1 ]; then
+#            if [ $battery_level -ge 95 && $battery_level -le 97 ]; then
+#               notify-send "Battery Full" "Level: ${battery_level}% "
+#            fi
+#        fi
+#
        if [ $ac_power -eq 0 ]; then
            if [ $battery_level -le 30 ]; then
               notify-send --urgency=CRITICAL "Battery Low" "Level: ${battery_level}%"
+              sleep 1500
            fi
        fi
-     sleep 1500
 done
