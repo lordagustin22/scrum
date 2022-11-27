@@ -2,6 +2,6 @@
 
 suspension="exec xidlehook --not-when-fullscreen --not-when-audio --detect-sleep"
 
-$suspension --timer 600 "lock" - &
+$suspension --timer 300 "lock" - &
 
-$suspension --timer 900 "loginctl suspend" -
+# $suspension --timer 900 "loginctl suspend" -
