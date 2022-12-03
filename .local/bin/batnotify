@@ -1,6 +1,11 @@
 #!/bin/sh
 
-baja=25
+export DISPLAY=:0
+# export DBUS_SESSION_BUS_ADDRESS=""
+# i dont know what my bus address is, and it's probably because it varies depending
+# on whether you use runit or systemd, which may be the reason why the env var isn't set properly
+
+baja=30
 descargando=`acpi -b | grep -c "Discharging"`
 nivel_bateria=`acpi -b | grep -P -o '[0-9]+(?=%)'`
 
