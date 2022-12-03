@@ -57,10 +57,10 @@ XF86AudioNext
 
 # backlight control
 XF86MonBrightnessDown
-    sudo brightnessctl set 5%-
+    sudo brillo -q -U 3
 
 XF86MonBrightnessUp
-    sudo brightnessctl set +5%
+    sudo brillo -q -A 3
 
 # take screenshoot
 Print
