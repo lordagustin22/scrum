@@ -29,6 +29,10 @@ super + @space
 super + shift + ctrl + l
     lock
 
+# suspend screen
+super + shift + ctrl + s
+    loginctl suspend
+
 # open calculator
 XF86Calculator
     galculator
