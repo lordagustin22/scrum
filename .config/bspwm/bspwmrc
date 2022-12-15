@@ -9,6 +9,7 @@ inactivity &
 fcitx5 -Dr -s 3 &
 $HOME/.config/polybar/launch.sh
 $HOME/.config/x11/xinitrc
+xsetroot -cursor_name left_ptr
 
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
