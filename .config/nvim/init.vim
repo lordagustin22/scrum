@@ -111,7 +111,6 @@ set incsearch		" Incremental search
 set autowrite		" Automatically save before commands like :next and :make
 set ic			" Ignore case
 set hidden		" Hide buffers when they are abandoned
-" set termguicolors
 set mouse=a		" Enable mouse usage (all modes)
 set expandtab		" Turn tab into spaces
 set hidden
@@ -122,6 +121,23 @@ set title
 set bg=dark
 set nohlsearch
 set noruler
+
+" Important!!
+        if has('termguicolors')
+          set termguicolors
+        endif
+
+   " The configuration options should be placed before `colorscheme (theme)`.
+        " let g:sonokai_style = 'espresso'
+        " let g:sonokai_better_performance = 1
+        " let g:sonokai_transparent_background = 1
+        " let g:sonokai_dim_inactive_windows = 1
+
+    " For gruvbox
+        let g:gruvbox_bold = 1
+        let g:gruvbox_italic = 1
+        let g:gruvbox_contrast_dark = 'hard'
+        colorscheme gruvbox
 
 " Some basics:
 	nnoremap c "_c
@@ -166,6 +182,4 @@ if !has('gui_running')
   set t_Co=256
 endif
 
- let g:lightline = {
-             \ 'colorscheme': 'nord',
-            \ }
+let g:lightline = {'colorscheme' : 'gruvbox'}
