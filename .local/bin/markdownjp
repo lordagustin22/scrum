@@ -1,10 +1,17 @@
 #!/bin/sh
-# font="/home/utane/Documentos/mincho.tex"
+font="/home/utane/.local/share/mincho.tex"
 
 pandoc \
--V 'mainfont: IPAMincho.ttf' \
-$1.rmd \
+# -V mainfont: IPAMincho \
+# extension de origen (md, rmd, etc)
+$1 \
+# a qué tipo de documento convertir
 -t $2 \
--o $1.pdf \
+# output final, generalmente, pdf
+-o $3 \
 --pdf-engine=xelatex \
 -H $font
+
+# como no puedo hacer andar a este script, el comando para que ande manualmente es (ejemplo)
+# suponiendo que estamos en $HOME
+# pandoc テスト.rmd -t pdf -o テスト.pdf --pdf-engine=xelatex -H .local/share/mincho.tex

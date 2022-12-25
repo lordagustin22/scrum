@@ -54,6 +54,7 @@ bspc rule -a Galculator state=floating
 bspc rule -a Anki follow=on
 bspc rule -a KeePassXC desktop=^5 follow=on
 bspc rule -a firefoxdeveloperedition desktop=^1
+bspc rule -a kanjitomo-reader-Launcher follow=on state=floating
 
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
