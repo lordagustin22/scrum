@@ -1,6 +1,11 @@
 let mapleader ='\'
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
+" Uncomment the next line to make Vim more Vi-compatible
+" NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
+" options, so any other options should be set AFTER setting 'compatible'.
+set nocompatible
+
 " Goyo plugin makes text more readable when writing prose:
        map <leader>f :Goyo \| set bg=light \| set linebreak<CR>
 " Spell-check set to <leader>o, 'o' for 'orthography':
@@ -85,11 +90,6 @@ if &diff
     highlight! link DiffText MatchParen
 endif
 
-" Uncomment the next line to make Vim more Vi-compatible
-" NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
-" options, so any other options should be set AFTER setting 'compatible'.
-set nocompatible
-
 " Vim5 and later versions support syntax highlighting. Uncommenting the next
 " line enables syntax highlighting by default.
 syntax on
@@ -118,14 +118,10 @@ set nobackup
 set shiftwidth=4
 set clipboard+=unnamedplus
 set title
+" set bg=light
 set bg=dark
 set nohlsearch
 set noruler
-
-" Important!!
-        if has('termguicolors')
-          set termguicolors
-        endif
 
    " The configuration options should be placed before `colorscheme (theme)`.
         " let g:sonokai_style = 'espresso'
@@ -134,10 +130,22 @@ set noruler
         " let g:sonokai_dim_inactive_windows = 1
 
     " For gruvbox
+    " gruvbox transparency, currently not working
+    " use ctermbg instead
+        " let g:gruvbox_transparent_bg = 1
         let g:gruvbox_bold = 1
         let g:gruvbox_italic = 1
+        let g:gruvbox_improved_warnings = 1
+        let g:gruvbox_vert_split = 'aqua'
         let g:gruvbox_contrast_dark = 'hard'
         colorscheme gruvbox
+
+" Important!!
+        if has('termguicolors')
+          set termguicolors
+        endif
+
+ autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
 
 " Some basics:
 	nnoremap c "_c

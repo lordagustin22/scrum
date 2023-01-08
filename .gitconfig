@@ -3,3 +3,5 @@
 [user]
 	email = niconecrofilo589@gmail.com
 	name = lordagustin22
+[protocol "file"]
+	allow = always
