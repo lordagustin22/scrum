@@ -23,11 +23,11 @@ super + Return
 
 # open rofi
 super + @space
-    rofrun
+    rofrun.sh
 
 # lock screen
 super + shift + ctrl + l
-    lock
+    lock.sh
 
 # suspend screen
 super + shift + ctrl + s
@@ -68,7 +68,7 @@ XF86MonBrightnessUp
 
 # take screenshoot
 Print
-    maimpick
+    maimpick.sh
 
 # dunst control
 # close topmost notification
