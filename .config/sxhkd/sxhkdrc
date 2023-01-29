@@ -2,36 +2,28 @@
 # config
 
 # Kill a process
-alt + {Escape,m,4,z}
+alt + k; {s,m,k,z}
 	{pkill -USR1 -x sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey, kill -USR1 $(pidof obs)}
 
 # open GUI
-alt + {a,b,g,o,d}
-    {anki,$BROWSER,gimp,virt-manager,obs}
+alt + g; {a,b,c,o,d, n}
+    {anki,$BROWSER,gimp,virt-manager,obs, soulseekqt}
 
 # open CLI
-alt + {s,w,h,t,q}
+alt + c; {s,w,h,t,c}
     {screenkey,st -e ncmpcpp,st -e htop,st -e tremc,st -e calcurse}
-
-# soulseek or other
-alt + n
-    soulseekqt
 
 # open terminal itself
 super + Return
     $TERMINAL
 
 # open rofi
-super + @space
-    rofrun.sh
+super + @d
+    dmenu_run
 
 # lock screen
-super + shift + ctrl + l
-    lock.sh
-
-# suspend screen
-super + shift + ctrl + s
-    loginctl suspend
+alt + x; {x, s}
+    {lock.sh, loginctl suspend}
 
 # open calculator
 XF86Calculator
