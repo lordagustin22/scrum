@@ -8,7 +8,7 @@
 output="$(date '+%y%m%d-%H%M-%S').png"
 xclip_cmd="xclip -sel clip -t image/png"
 
-case "$(printf "a selected area\\ncurrent window\\nfull screen\\na selected area (copy)\\ncurrent window (copy)\\nfull screen (copy)" | rofi -dmenu -l 6 -i -p "Screenshot which area?")" in
+case "$(printf "a selected area\\ncurrent window\\nfull screen\\na selected area (copy)\\ncurrent window (copy)\\nfull screen (copy)" | dmenu -l 6 -i -p "Screenshot which area?")" in
     "a selected area") maim -s -u pic-selected-"${output}" ;;
     "current window") maim -u -q -d 0.2 -i "$(xdotool getactivewindow)" pic-window-"${output}" ;;
     "full screen") maim -u -q -d 0.2 pic-full-"${output}" ;;
