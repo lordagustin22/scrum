@@ -14,7 +14,7 @@ pushing() {
 }
 
 ask() {
-    choice=$(printf "Add\\nPush" | rofi -dmenu -i -p "Qué opción desea ejecutar?")
+    choice=$(printf "Add\\nPush" | dmenu -i -p "Qué opción desea ejecutar?")
     case "$choice" in
         Add) adding;;
         Push) pushing;;
