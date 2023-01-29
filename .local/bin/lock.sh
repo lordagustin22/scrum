@@ -16,7 +16,7 @@ lock() {
 
 lock
 
-# case "$(printf "Bloquear\\nSuspender" | rofi -dmenu -l 2 -i -p "Qué desea hacer?")" in
+# case "$(printf "Bloquear\\nSuspender" | dmenu -l 2 -i -p "Qué desea hacer?")" in
 #     "Bloquear") lock ;;
 #     "Suspender") loginctl suspend && lock ;;
 # esac
