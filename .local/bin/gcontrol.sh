@@ -6,7 +6,8 @@ file=$HOME/Documentos/tokengit.txt
 adding() {
     git add .
     read -p "Enter a commit message: " commit_message
-    git commit -m "$commit_message" $!
+    read -p "Enter the file you want to commit: " commit_file
+    git commit -m "$commit_message" $commit_file
 }
 
 pushing() {
