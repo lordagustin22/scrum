@@ -1,22 +1,17 @@
 #!/bin/sh
 
 # hyperborea route
-route=($HOME/Imagenes/Backgrounds/hyperborea)
-
-# Blurred image
-if ! [[ -e $route/hyperborea-blur.png ]]; then
-    convert $route/hyperborea.jpeg -blur 0x20 -paint 2 -bordercolor '#4c566a' -border 10x10 $route/hyperborea-blur.png
-fi
-
+bloqueo=($XDG_DATA_HOME/lockscreen.png)
 
 # Lock screen
 lock() {
-    i3lock --verif-text="verificando malongo nwn" --wrong-text="jeje ta mal" --noinput-text="pero pone algo gordo choripanero" -e -f -L -i $route/hyperborea-blur.png
+    i3lock -e -f -L \
+    --radius 60 --ring-width 5 \
+    --ind-pos="233:713" \
+    -i $bloqueo
 }
 
 lock
 
-# case "$(printf "Bloquear\\nSuspender" | dmenu -l 2 -i -p "Qué desea hacer?")" in
-#     "Bloquear") lock ;;
-#     "Suspender") loginctl suspend && lock ;;
-# esac
+# empieza en x = 172, termina en x = 293
+# empieza en y = 768, termina en y = 652
