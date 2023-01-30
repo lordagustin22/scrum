@@ -5,12 +5,14 @@ file=$HOME/Documentos/tokengit.txt
 # adds everything and makes a commit
 adding() {
     git add .
-    git commit -m "Update"
+    read -p "Enter a commit message: " commit_message
+    git commit -m "$commit_message" $!
 }
 
 pushing() {
     cat $file | xargs -I '{}' echo -n {} | xclip -sel clip
     git push
+    echo "" | xclip -sel clip #emtpies xclip for safety
 }
 
 ask() {
