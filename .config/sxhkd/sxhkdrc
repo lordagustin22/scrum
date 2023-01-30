@@ -2,11 +2,11 @@
 # config
 
 # Kill a process
-alt + k; {s,m,k,z}
-	{pkill -USR1 -x sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey, kill -USR1 $(pidof obs)}
+alt + k; {s,m,k,z,p}
+	{pkill -USR1 -x sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey, kill -USR1 $(pidof obs), launch.sh}
 
 # open GUI
-alt + g; {a,b,c,o,d, n}
+alt + g; {a,b,g,o,d, n}
     {anki,$BROWSER,gimp,virt-manager,obs, soulseekqt}
 
 # open CLI
