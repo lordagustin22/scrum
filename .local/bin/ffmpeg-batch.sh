@@ -18,4 +18,4 @@ for filename in "$srcDir"/*.$srcExt; do
     rm -f "$destDir"/"$baseName"."$srcExt"
 done
 
-notify-send "Conversion de ${srcExt} a ${destExt} completado nwn"
+notify-send "Conversion de ${srcExt} a ${destExt} completada nwn"
