@@ -6,7 +6,7 @@
     # geometry = "0x0-0+24"
     width = 300
     height = 300
-    offset= 10x50
+    offset = 0x22
 
     indicate_hidden = yes
     shrink = yes
@@ -23,7 +23,7 @@
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
     #  * anything else will be interpreted as a X color.
-    separator_color = frame
+    separator_color = auto
 
     # Sort messages by urgency.
     sort = yes
@@ -74,22 +74,22 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#2e3436"
-    foreground = "#eeeeec"
-    frame_color = "#729fcf"
+    background = "#1d2021"
+    foreground = "#ebdbb2"
+    frame_color = "#b8bb26"
     timeout = 3
     # Icon for notifications with low urgency, uncomment to enable
     new_icon = /home/utane/.config/dunst/normal.png
 
 [urgency_normal]
-    background = "#3465a4"
-    foreground = "#eeeeec"
-    frame_color = "#729fcf"
+    background = "#689d6a"
+    foreground = "#ebdbb2"
+    frame_color = "#b8bb26"
     timeout = 5
     new_icon = /home/utane/.config/dunst/normal.png
 
 [urgency_critical]
-    background = "#cc2421"
+    background = "#cc241d"
     foreground = "#ebdbb2"
     frame_color = "#fabd2f"
     timeout = 0
