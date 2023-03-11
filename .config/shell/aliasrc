@@ -34,7 +34,7 @@ alias \
 # ffmpeg commands
 alias \
 	ffmpeg="ffmpeg -hide_banner" \
-  ffconvert="find -maxdepth 1 -mindepth 1 -type f -name '*.mkv' -print -exec sh -c 'i="{}"; ffmpeg -i "$i" -c:v libx264 -crf 22 "${i%.mkv}".mp4' \;"
+  ffconvert='find -maxdepth 1 -mindepth 1 -type f -name "*.mkv" -print -exec sh -c '\''i="{}"; ffmpeg -i "$i" -c:v libx264 -crf 22 "${i%.mkv}".mp4'\'' \;'
 
 # These common commands are just too long! Abbreviate them.
 alias \
@@ -54,16 +54,20 @@ alias \
         pa="paru" \
         ne="neofetch" \
         v="$EDITOR" \
-        t="tmux" \
-        tn="tmux new-session -swk" \
         h="htop" \
         c="cointop" \
         src="source ~/.config/shell/profile && source ~/.zshrc && source ~/.config/shell/aliasrc"
 
+        # tmux commands
+alias \
+        t="tmux" \
+        tn="t new-session -swk" \
+        tk="t kill-session"
+
 # enable color support of ls and also add handy aliases
 alias \
     ls="ls -hN --color=auto --group-directories-first" \
-    datecheck='ls -l | grep "$(if [[ "$(date "+%-d")" -lt 10 ]]; then date "+%b  %-d"; else date "+%b %-d"; fi)"' \
+    dt='ls -l | grep "$(if [[ "$(date "+%-d")" -lt 10 ]]; then date "+%b  %-d"; else date "+%b %-d"; fi)"' \
     dir="dir --color=auto" \
     vdir="vdir --color=auto" \
     grep="grep --color=auto" \
