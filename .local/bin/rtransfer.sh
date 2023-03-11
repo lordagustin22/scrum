@@ -23,11 +23,10 @@ backup_folders() {
 }
 
 backup_files() {
-    find $HOME/Descargas -print -exec rsync -Pavz --exclude 'Series' {} "$DESTINO/Descargas" \;
-    find $HOME/Documentos -print -exec rsync -Pavz --exclude={'Libros','Mis Cosas'} {} "$DESTINO/Documentos" \;
+    # find $HOME/Descargas -print -exec rsync -Pavz --exclude 'Series' {} "$DESTINO/Descargas" \;
+    # find $HOME/Documentos -print -exec rsync -Pavz --exclude={'Libros','Mis Cosas'} {} "$DESTINO/Documentos" \;
+    rsync -Pavz --exclude 'Series' --exclude={'Libros','Mis Cosas'} "$HOME/Descargas" "$HOME/Documentos" --exclude={'Emulation','ISO','Images'} "$HOME/Escritorio" "$DESTINO"
     rsync -Pavz --ignore-existing "$HOME/Imagenes" "$DESTINO/Imagenes"
-    rsync -Pavz --exclude={'Emulation','ISO','Images'} "$HOME/Escritorio" "$DESTINO/Escritorio"
-    rsync -Pavz --ignore-existing --exclude '*.flac' "$HOME/Musica" "$DESTINO/Musica"
     notify-send "Los archivos se terminaron de mandar a $DESTINO"
 }
 
