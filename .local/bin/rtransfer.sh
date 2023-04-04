@@ -4,7 +4,7 @@
 readonly BACKUP_DIRS=($HOME/Documentos/duanland.neocities.org $HOME/Documentos/UTN $HOME/Documentos/Cosas-japo $HOME/Descargas/PruebaTraduccion-IVREA $HOME/Imagenes $XDG_DATA_HOME/vimwiki)
 readonly RSYNC_DEFAULTS="-Paz"
 # readonly DESTINO=/run/media/utane/AleAgus/
-readonly DESTINO=/run/media/utane/5043-93A3
+readonly DESTINO=/run/media/utane/ALE
 
     if [[ ! -d "$DESTINO/Descargas" || ! -d "$DESTINO/Documentos" || ! -d "$DESTINO/Imagenes" || ! -d "$DESTINO/Musica" || ! -d "$DESTINO/Escritorio" ]]; then
         mkdir -p "$DESTINO/Descargas" "$DESTINO/Documentos" "$DESTINO/Imagenes" "$DESTINO/Musica" "$DESTINO/Escritorio"
@@ -25,8 +25,9 @@ backup_folders() {
 backup_files() {
     # find $HOME/Descargas -print -exec rsync -Pavz --exclude 'Series' {} "$DESTINO/Descargas" \;
     # find $HOME/Documentos -print -exec rsync -Pavz --exclude={'Libros','Mis Cosas'} {} "$DESTINO/Documentos" \;
-    rsync -Pavz --exclude 'Series' --exclude={'Libros','Mis Cosas'} "$HOME/Descargas" "$HOME/Documentos" --exclude={'Emulation','ISO','Images'} "$HOME/Escritorio" "$DESTINO"
-    rsync -Pavz --ignore-existing "$HOME/Imagenes" "$DESTINO/Imagenes"
+    rsync -Pavz --delete --exclude 'Series' "$XDG_DATA_HOME/vimwiki" "$HOME/Descargas" "$HOME/Documentos" --exclude={'Emulation','ISO','Images'} "$HOME/Escritorio" "$DESTINO"
+    # rsync -Pavz --delete Musica/Ambiance Musica/Anime Musica/dl-music Musica/Hip\ Hop Musica/Japanese\ Jazz\ Fusion Musica/Latina Musica/City\ Pop "$DESTINO/Musica"
+    rsync -Pavz --delete "$HOME/Imagenes" "$DESTINO"
     notify-send "Los archivos se terminaron de mandar a $DESTINO"
 }
 
