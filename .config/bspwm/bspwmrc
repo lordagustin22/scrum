@@ -40,7 +40,7 @@ bspc config urgent_border_color 	"#cc241d"
 
 
 # Rules for windows
-bspc rule -a Gimp desktop=^2 follow=on state=floating
+bspc rule -a Gimp desktop=^4 follow=on state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a mplayer2 state=floating
 bspc rule -a Screenkey manage=off
@@ -53,6 +53,7 @@ bspc rule -a Galculator state=floating
 bspc rule -a Anki follow=on
 bspc rule -a KeePassXC desktop=^5 follow=on
 bspc rule -a firefoxdeveloperedition desktop=^1
+bspc rule -a transmission-gtk desktop=^9 state=tiled follow=off
 bspc rule -a kanjitomo-reader-Launcher follow=on state=floating desktop=^3
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...

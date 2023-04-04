@@ -6,8 +6,8 @@ alt + k; {s,m,k,z,p}
 	{pkill -USR1 -x sxhkd,pkill -USR1 mpd && mpd,pkill -USR1 screenkey, kill -USR1 $(pidof obs), launch.sh}
 
 # open GUI
-alt + g; {a,b,g,o,d,n,e,x,m}
-    {anki,$BROWSER,gimp,virt-manager,obs, soulseekqt,electrum,monero-wallet-gui,mpv --player-operation-mode=pseudo-gui}
+alt + g; {a,b,g,o,d,n,e,x,m,t,f,k}
+    {anki,$BROWSER,gimp,virt-manager,obs, soulseekqt,electrum,monero-wallet-gui,mpv --player-operation-mode=pseudo-gui, transmission-gtk, filezilla, keepassxc}
 
 # open CLI
 alt + c; {s,w,h,t,c}
