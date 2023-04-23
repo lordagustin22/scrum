@@ -25,9 +25,8 @@ backup_folders() {
 backup_files() {
     # find $HOME/Descargas -print -exec rsync -Pavz --exclude 'Series' {} "$DESTINO/Descargas" \;
     # find $HOME/Documentos -print -exec rsync -Pavz --exclude={'Libros','Mis Cosas'} {} "$DESTINO/Documentos" \;
-    rsync -Pavz --delete --exclude 'Series' "$XDG_DATA_HOME/vimwiki" "$HOME/Descargas" "$HOME/Documentos" --exclude={'Emulation','ISO','Images'} "$HOME/Escritorio" "$DESTINO"
+    rsync -Pavz --delete --exclude={'Series','Mega-Programacion'} "$XDG_DATA_HOME/vimwiki" "$HOME/Descargas" "$HOME/Documentos" "$HOME/Imagenes" --exclude={'Emulation','ISO','Images'} "$HOME/Escritorio" "$DESTINO"
     # rsync -Pavz --delete Musica/Ambiance Musica/Anime Musica/dl-music Musica/Hip\ Hop Musica/Japanese\ Jazz\ Fusion Musica/Latina Musica/City\ Pop "$DESTINO/Musica"
-    rsync -Pavz --delete "$HOME/Imagenes" "$DESTINO"
     notify-send "Los archivos se terminaron de mandar a $DESTINO"
 }
 
