@@ -4,7 +4,6 @@ pgrep -x sxhkd || sxhkd &
 pgrep -x nm-applet || nm-applet &
 pgrep -x redshift-gtk || redshift-gtk &
 numlockx on &
-inactivity.sh &
 fcitx5 -dr &
 $HOME/.config/polybar/launch.sh
 $HOME/.config/x11/xinitrc
