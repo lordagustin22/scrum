@@ -55,7 +55,6 @@ alias \
         pu="sudo pacman -Syu" \
         pa="paru" \
         ne="neofetch" \
-        v="$EDITOR" \
         h="htop" \
         c="cointop" \
         src="source ~/.config/shell/profile && source ~/.zshrc && source ~/.config/shell/aliasrc"
