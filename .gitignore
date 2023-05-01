@@ -3,12 +3,12 @@
 snap
 *SoulseekQt
 k*
-
-# Ignore directories
-/*
-
-# Ignore files
-git-control
+D*
+Escritorio
+Imagenes
+Monero
+Musica
+Videos
 
 # Ignore filetypes
 *.txt
@@ -34,3 +34,10 @@ git-control
 *.aux
 *.json
 .gtk-bookmarks
+plugin
+custom
+spell
+ftplugin
+coc-settings.json
+.luarc.json
+lazy-lock.json
