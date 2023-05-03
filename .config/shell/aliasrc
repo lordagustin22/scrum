@@ -16,9 +16,7 @@ alias \
  ytn='yt --embed-thumbnail --embed-metadata -o "./%(title)s.%(ext)s"'
 
 # bashrc/other configs
-alias \
- nc="$EDITOR ~/.config/$EDITOR/init.vim" \
- s="$EDITOR ~/.config/sxhkd/sxhkdrc"
+ alias s="$EDITOR ~/.config/sxhkd/sxhkdrc"
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \

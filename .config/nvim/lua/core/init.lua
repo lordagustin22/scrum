@@ -138,6 +138,36 @@ vim.api.nvim_command('autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filet
 vim.api.nvim_command('autocmd BufRead,BufNewFile *.tex set filetype=tex')
 
 opt.compatible = false
+opt.encoding = "utf-8"
 vim.cmd('filetype plugin on')
 vim.cmd('syntax on')
+
+vim.cmd[[
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+vnoremap . :normal .<CR>
+]]
+
+-- bindings
+vim.cmd[[
+nnoremap c "_c
+
+map <leader>c :w! \| !compiler "%:p"<CR>
+
+"" spellcheck activation
+map <leader>o :setlocal spell! spelllang=es_ar<CR>
+
+"" toggle autocompiler
+map <leader>a :!setsid autocomp.sh % &<CR>
+
+"" replace all is aliased to S
+nnoremap S :%s//g<Left><Left>
+
+"" Open corresponding .pdf/.html or preview
+map <leader>p :!opout "%:p"<CR>
+
+"" Save file as sudo on files that require root permission
+cabbrev w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
+map <leader>ww :VimwikiIndex<CR>
+]]
 -------------------------------------------------------------------------------------------------------------
