@@ -5,7 +5,7 @@ local config = require("core.utils").load_config()
 -------------------------------------- globals -----------------------------------------
 g.nvchad_theme = config.ui.theme
 g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
-g.toggle_theme_icon = "   "
+g.toggle_theme_icon = "   "
 g.transparency = config.ui.transparency
 
 -------------------------------------- options ------------------------------------------
@@ -139,16 +139,18 @@ vim.api.nvim_command('autocmd BufRead,BufNewFile *.tex set filetype=tex')
 
 opt.compatible = false
 opt.encoding = "utf-8"
-vim.cmd('filetype plugin on')
-vim.cmd('syntax on')
+vim.cmd([[
+filetype plugin on
+syntax on
+]])
 
-vim.cmd[[
+vim.cmd([[
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 vnoremap . :normal .<CR>
-]]
+]])
 
 -- bindings
-vim.cmd[[
+vim.cmd([[
 nnoremap c "_c
 
 map <leader>c :w! \| !compiler "%:p"<CR>
@@ -169,5 +171,5 @@ map <leader>p :!opout "%:p"<CR>
 cabbrev w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 map <leader>ww :VimwikiIndex<CR>
-]]
+]])
 -------------------------------------------------------------------------------------------------------------
