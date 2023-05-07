@@ -29,15 +29,13 @@ Videos
 *.xcf
 *.webm
 *.mkv
-*.sh
 *.log
 *.aux
 *.json
+*.html
+*.js
 .gtk-bookmarks
 plugin
 custom
 spell
 ftplugin
-coc-settings.json
-.luarc.json
-lazy-lock.json
