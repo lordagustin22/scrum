@@ -3,8 +3,8 @@
 # this is a work in progress
 readonly BACKUP_DIRS=($HOME/Documentos/duanland.neocities.org $HOME/Documentos/UTN $HOME/Documentos/Cosas-japo $HOME/Descargas/PruebaTraduccion-IVREA $HOME/Imagenes $XDG_DATA_HOME/vimwiki)
 readonly RSYNC_DEFAULTS="-Paz"
-# readonly DESTINO=/run/media/utane/AleAgus/
-readonly DESTINO=/run/media/utane/ALE
+readonly NOMBRE="Alissa"
+readonly DESTINO=/run/media/utane/$NOMBRE
 
     if [[ ! -d "$DESTINO/Descargas" || ! -d "$DESTINO/Documentos" || ! -d "$DESTINO/Imagenes" || ! -d "$DESTINO/Musica" || ! -d "$DESTINO/Escritorio" ]]; then
         mkdir -p "$DESTINO/Descargas" "$DESTINO/Documentos" "$DESTINO/Imagenes" "$DESTINO/Musica" "$DESTINO/Escritorio"
