@@ -27,6 +27,7 @@ alias \
   rmd="rmdir -v" \
   du="du -h" \
   rt="rsync -Paz" \
+  # lf="lfub" \
   ft="rt --no-recursive"
 
 # ffmpeg commands
@@ -40,7 +41,6 @@ alias \
 alias \
 	z="zathura" \
         ka="killall" \
-        lf="lfub" \
         g="git" \
 	      i="sxiv -q -a -t" \
 	      sdn="sudo shutdown -h now" \
@@ -52,7 +52,7 @@ alias \
         pn="sudo pacman -S --needed" \
         pu="sudo pacman -Syu" \
         pa="paru" \
-        ne="neofetch" \
+        n="neofetch" \
         h="htop" \
         c="cointop" \
         src="source ~/.config/shell/profile && source ~/.zshrc && source ~/.config/shell/aliasrc"
@@ -78,7 +78,7 @@ alias \
 # alias \
 	# ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
 
-# java related alias
+# javascript related alias
 alias \
     tscp="tsc -p tsconfig.json"
 
