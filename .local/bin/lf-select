@@ -1,9 +1,11 @@
-#!/bin/sh
-
-# Reads file names from stdin and selects them in lf.
-
-while read -r file; do
-	[ -z "$file" ] && continue
-	lf -remote "send select \"$file\""
-	lf -remote "send toggle"
-done
+#!/bin/bash
+# read filenames from stdin and select them in lf.
+IFS=$'\n'
+set -- $(cat)
+set -- "${@//\"/'\"'}"
+send() { lf -remote "send ${id:?} $*" ;}
+case $# in
+    0) ;;
+    1) send "select \"$1\"" ;;
+    *) for f; do send "select \"$f\""; send toggle; done ;;
+esac

@@ -6,7 +6,7 @@ readonly RSYNC_DEFAULTS="-Paz"
 readonly NOMBRE="Alissa"
 readonly DESTINO=/run/media/utane/$NOMBRE
 
-    if [[ ! -d "$DESTINO/Descargas" || ! -d "$DESTINO/Documentos" || ! -d "$DESTINO/Imagenes" || ! -d "$DESTINO/Musica" || ! -d "$DESTINO/Escritorio" ]]; then
+    if [[ ! -d "$DESTINO/Descargas" || ! -d "$DESTINO/Documentos" || ! -d "$DESTINO/Imagenes" || ! -d "$DESTINO/Musica" || ! -d "$DESTINO/Escritorio" || ! -d "$DESTINO/Videos" ]]; then
         mkdir -p "$DESTINO/Descargas" "$DESTINO/Documentos" "$DESTINO/Imagenes" "$DESTINO/Musica" "$DESTINO/Escritorio"
     fi
 
