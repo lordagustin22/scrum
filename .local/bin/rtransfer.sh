@@ -2,8 +2,8 @@
 
 # this is a work in progress
 readonly BACKUP_DIRS=($HOME/Documentos/duanland.neocities.org $HOME/Documentos/UTN $HOME/Documentos/Cosas-japo $HOME/Descargas/PruebaTraduccion-IVREA $HOME/Imagenes $XDG_DATA_HOME/vimwiki)
-readonly RSYNC_DEFAULTS="-Paz"
-readonly NOMBRE="Alissa"
+readonly RSYNC_DEFAULTS="-Pavz"
+readonly NOMBRE="ALISA"
 readonly DESTINO=/run/media/utane/$NOMBRE
 
     if [[ ! -d "$DESTINO/Descargas" || ! -d "$DESTINO/Documentos" || ! -d "$DESTINO/Imagenes" || ! -d "$DESTINO/Musica" || ! -d "$DESTINO/Escritorio" || ! -d "$DESTINO/Videos" ]]; then
@@ -17,25 +17,21 @@ backup_folders() {
         # TARGET=${TARGET//\//_}
         TARGET=${TARGET##*\/}
         TARGET=$TARGET-$(date +"%d-%m-%Y_%T")
-        rsync $RESYNC_DEFAULTS $DIR/ $DESTINO/$TARGET
+        rsync $RSYNC_DEFAULTS $DIR/ $DESTINO/$TARGET
     done
     notify-send "Los directorios se terminaron de mandar a $DESTINO"
 }
 
 backup_files() {
-    # find $HOME/Descargas -print -exec rsync -Pavz --exclude 'Series' {} "$DESTINO/Descargas" \;
-    # find $HOME/Documentos -print -exec rsync -Pavz --exclude={'Libros','Mis Cosas'} {} "$DESTINO/Documentos" \;
-    rsync -Pavz --delete --exclude={'Series','Mega-Programacion'} "$XDG_DATA_HOME/vimwiki" "$HOME/Descargas" "$HOME/Documentos" "$HOME/Imagenes" --exclude={'Emulation','ISO','Images'} "$HOME/Escritorio" "$DESTINO"
-    # rsync -Pavz --delete Musica/Ambiance Musica/Anime Musica/dl-music Musica/Hip\ Hop Musica/Japanese\ Jazz\ Fusion Musica/Latina Musica/City\ Pop "$DESTINO/Musica"
+    rsync $RSYNC_DEFAULTS --delete --exclude={'Series','Mega-Programacion'} "$XDG_DATA_HOME/vimwiki" "$HOME/Descargas" "$HOME/Documentos" "$HOME/Imagenes" --exclude={'Emulation','ISO','Images','Cosas-Windows'} "$HOME/Escritorio" "$DESTINO"
     notify-send "Los archivos se terminaron de mandar a $DESTINO"
 }
 
 main() {
-    backup_folders
     backup_files
 }
 
-backup_files
+main
 
 # This is still in testing
 # yet to be implemented
