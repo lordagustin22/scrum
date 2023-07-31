@@ -10,6 +10,12 @@ adding() {
     git commit -m "$commit_message" $commit_file
 }
 
+updating() {
+  git add .
+  # read -p "Archivo para el commit: " commit_file
+  git commit --amend --no-edit
+}
+
 pushing() {
     cat $file | xargs -I '{}' echo -n {} | xclip -sel clip
     git push
@@ -17,10 +23,11 @@ pushing() {
 }
 
 ask() {
-    choice=$(printf "Add\\nPush" | dmenu -i -p "Qué opción desea ejecutar?")
+    choice=$(printf "Add\\nUpdate\\nPush" | dmenu -i -p "Qué opción desea ejecutar?")
     case "$choice" in
-        Add) adding;;
-        Push) pushing;;
+        Add) adding ;;
+        Update) updating ;;
+        Push) pushing ;;
     esac
 }
 

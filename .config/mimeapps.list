@@ -21,6 +21,7 @@ text/plain=nvim.desktop;
 audio/x-vorbis+ogg=mpv.desktop;
 audio/mpeg=mpv.desktop;
 application/x-ms-dos-executable=wine.desktop;
+image/webp=userapp-sxiv-P9CE81.desktop;userapp-sxiv-M6L671.desktop;
 
 [Default Applications]
 video/x-matroska=mpv.desktop;
@@ -49,3 +50,6 @@ x-scheme-handler/about=firefoxdeveloperedition.desktop
 x-scheme-handler/unknown=firefoxdeveloperedition.desktop
 text/plain=nvim.desktop
 application/vnd.comicbook-rar=org.pwmt.zathura-cb.desktop
+image/webp=userapp-sxiv-P9CE81.desktop
+
+[Removed Associations]

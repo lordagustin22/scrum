@@ -1,5 +1,5 @@
 #!/bin/sh
-file="cuqui"
+file="file"
 read -e -i "$file" -p "Name the input video: " input
 file="${input:-$file}"
 ffmpeg -i $1 -i $1 \
