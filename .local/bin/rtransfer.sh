@@ -3,7 +3,7 @@
 # this is a work in progress
 readonly BACKUP_DIRS=($HOME/Documentos/duanland.neocities.org $HOME/Documentos/UTN $HOME/Documentos/Cosas-japo $HOME/Descargas/PruebaTraduccion-IVREA $HOME/Imagenes $XDG_DATA_HOME/vimwiki)
 readonly RSYNC_DEFAULTS="-Pavz"
-readonly NOMBRE="ALISA"
+readonly NOMBRE="$(cat ~/Documentos/nombre-pen.txt)"
 readonly DESTINO=/run/media/utane/$NOMBRE
 
     if [[ ! -d "$DESTINO/Descargas" || ! -d "$DESTINO/Documentos" || ! -d "$DESTINO/Imagenes" || ! -d "$DESTINO/Musica" || ! -d "$DESTINO/Escritorio" || ! -d "$DESTINO/Videos" ]]; then
