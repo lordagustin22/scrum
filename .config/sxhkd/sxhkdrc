@@ -7,10 +7,10 @@ alt + k; {s,m,k,z,p,f}
 
 # open GUI
 alt + g; {a,b,g,o,d,n,e,x,m,t,f,k,v}
-    {anki,$BROWSER,gimp,virt-manager,obs, soulseekqt,electrum,monero-wallet-gui,mpv --player-operation-mode=pseudo-gui, transmission-gtk, filezilla, keepassxc,vscodium}
+    {anki,$BROWSER,gimp,virt-manager,obs, soulseekqt,electrum,monero-wallet-gui,mpv --player-operation-mode=pseudo-gui, transmission-gtk, filezilla, keepassxc,code}
 
 # open CLI
-alt + c; {s,w,h,t,c}
+alt + c; {s,m,h,t,c}
     {screenkey,st -e ncmpcpp,st -e htop,st -e tremc,st -e calcurse}
 
 # open terminal itself
