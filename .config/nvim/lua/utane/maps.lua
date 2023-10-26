@@ -57,7 +57,7 @@ map('n', '<leader>s', ':!clear && shellcheck -x %<CR>')
 map('n', 'S', ':%s///g<Left><Left><Left>', { expr = true })
 
 -- Compile document, be it groff/LaTeX/markdown/etc.
-map('n', '<leader>c', '<CMD>w! | !compiler "<c-r>%"<CR>')
+map('n', '<leader>c', ':w! | !compiler "<c-r>%"<CR>')
 
 -- Compile slide with pandoc
 map('n', '<leader>e', ':!pandoc % -t beamer -o %.pdf<CR>')
