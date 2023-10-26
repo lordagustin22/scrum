@@ -10,6 +10,12 @@ adding() {
     git commit -m "$commit_message" $commit_file
 }
 
+addMsg() {
+    git add .
+    read -p "Archivo para el commit: " commit_file
+    git commit -C $commit_file
+}
+
 updating() {
   git add .
   # read -p "Archivo para el commit: " commit_file
@@ -23,9 +29,10 @@ pushing() {
 }
 
 ask() {
-    choice=$(printf "Add\\nUpdate\\nPush" | dmenu -i -p "Qué opción desea ejecutar?")
+    choice=$(printf "Add\\nAddCommitC\\nUpdate\\nPush" | dmenu -i -p "Qué opción desea ejecutar?")
     case "$choice" in
         Add) adding ;;
+        AddCommitC) addMsg ;;
         Update) updating ;;
         Push) pushing ;;
     esac
