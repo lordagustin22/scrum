@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/utane/.local/share/nvim/site/pack/packer/start/i3-vim-syntax",
     url = "https://github.com/PotatoesMaster/i3-vim-syntax"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/utane/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["limelight.vim"] = {
     loaded = true,
     path = "/home/utane/.local/share/nvim/site/pack/packer/start/limelight.vim",
@@ -98,6 +103,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/utane/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/scrooloose/nerdtree"
+  },
+  ["nvim-autopairs"] = {
+    config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
+    loaded = true,
+    path = "/home/utane/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-base16"] = {
     loaded = true,
@@ -188,6 +199,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

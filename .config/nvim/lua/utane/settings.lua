@@ -101,8 +101,18 @@ end
 
 -- Activate plugins
 require('lualine').setup()
+require("ibl").setup()
 g.rainbow_active = 1
 g.python_highlight_all = 1
+
+require'nvim-treesitter.configs'.setup {
+  autotag = {
+    enable = true,
+  }
+}
+
+-- add option map_cr
+require('nvim-autopairs').setup({ map_cr = true })
 
 g.mapleader = ' '
 g.maplocalleader = ' '

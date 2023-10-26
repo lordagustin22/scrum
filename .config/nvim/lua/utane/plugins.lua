@@ -31,6 +31,13 @@ packer.startup(function(use)
 	-- use("jreybert/vimagit")
     use 'sheerun/vim-polyglot'
 
+use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+}
+
+use "lukas-reineke/indent-blankline.nvim"
+
 	use {
 	  'nvim-lualine/lualine.nvim',
 	   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
