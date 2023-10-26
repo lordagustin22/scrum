@@ -23,7 +23,8 @@ backup_folders() {
 }
 
 backup_files() {
-    rsync $RSYNC_DEFAULTS --delete --exclude={'Series','Mega-Programacion'} "$XDG_DATA_HOME/vimwiki" "$HOME/Descargas" "$HOME/Documentos" "$HOME/Imagenes" --exclude={'Emulation','ISO','Images','Cosas-Windows'} "$HOME/Escritorio" "$DESTINO"
+    # rsync $RSYNC_DEFAULTS --delete --exclude={'Series','Mega-Programacion','node_modules','.angular','.vscode','.git'} "$XDG_DATA_HOME/vimwiki" "$HOME/Descargas" "$HOME/Documentos" "$HOME/Imagenes" --exclude={'Emulation','ISO','Images','Cosas-Windows'} "$HOME/Escritorio" "$DESTINO"
+    rsync $RSYNC_DEFAULTS --delete --exclude-from='/home/utane/Documentos/excluir.txt' "$XDG_DATA_HOME/vimwiki" "$HOME/Descargas" "$HOME/Documentos" "$HOME/Imagenes" "$HOME/Escritorio" "$DESTINO"
     notify-send "Los archivos se terminaron de mandar a $DESTINO"
 }
 
@@ -32,47 +33,3 @@ main() {
 }
 
 main
-
-# This is still in testing
-# yet to be implemented
-# backup_files() {
-#     local DESCARGAS_TARGET="$DESTINO/Descargas"
-#     local DOCUMENTOS_TARGET="$DESTINO/Documentos"
-#     local NOW=$(date +%s)
-#     local THREE_DAYS_AGO=$((NOW - (3 * 24 * 3600)))  # 3 days ago in seconds since epoch
-#
-#     # Backup files in Descargas directory
-#     find "$HOME/Descargas" -maxdepth 1 -mindepth 1 -type f -print | while read file; do
-#         local filename=$(basename "$file")
-#         local dest="$DESCARGAS_TARGET/$filename"
-#         local mtime=$(stat -c %Y "$dest" 2>/dev/null || echo 0)
-#         if [[ $mtime -lt $THREE_DAYS_AGO ]]; then
-#             rsync -vz "$file" "$DESCARGAS_TARGET"
-#         else
-#             rsync -vz --ignore-existing "$file" "$DESCARGAS_TARGET"
-#         fi
-#     done
-#
-#     # Backup files in Documentos directory
-#     find "$HOME/Documentos" -maxdepth 1 -mindepth 1 -type f -print | while read file; do
-#         local filename=$(basename "$file")
-#         local dest="$DOCUMENTOS_TARGET/$filename"
-#         local mtime=$(stat -c %Y "$dest" 2>/dev/null || echo 0)
-#         if [[ $mtime -lt $THREE_DAYS_AGO ]]; then
-#             rsync -vz "$file" "$DOCUMENTOS_TARGET"
-#         else
-#             rsync -vz --ignore-existing "$file" "$DOCUMENTOS_TARGET"
-#         fi
-#     done
-#
-#     notify-send "Los archivos se terminaron de mandar a $DESTINO"
-# }
-
-# This is here for demonstrative purposes only
-# If we aren't transferring a DIRectory
-# then just print out the file name
-# if [ ! -d ${DIR##*/} ]; then
-    # notify-send 'Transferencia de '${DIR##*/}' completa'
-    # else
-    # notify-send 'Transferencia en '${DIR##*/}' completa'
-# fi
