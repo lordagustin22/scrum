@@ -19,10 +19,6 @@ map('n', '<C-s>', '<CMD>w<CR>')
 -- Quit and save neovim
 map('n', '<C-w>', '<CMD>x<CR>')
 
--- leader-o/O inserts blank line below/above
-map('n', '<leader>o', 'o<ESC>')
-map('n', '<leader>O', 'O<ESC>')
-
 -- Shortcut to yank register
 map({ 'n', 'x' }, '<leader>p', '"0p')
 
@@ -58,7 +54,7 @@ map('n', 'Q', 'gq')
 map('n', '<leader>s', ':!clear && shellcheck -x %<CR>')
 
 -- Replace all is aliased to S.
-map('n', 'S', ':%s//g<Left>')
+map('n', 'S', ':%s///g<Left><Left><Left>', { expr = true })
 
 -- Compile document, be it groff/LaTeX/markdown/etc.
 map('n', '<leader>c', '<CMD>w! | !compiler "<c-r>%"<CR>')
