@@ -23,6 +23,7 @@ alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	rm="rm -vI" \
+    rmlog="rm -vI *.log *.tex" \
 	mkd="mkdir -pv" \
   rmd="rmdir -v" \
   du="du -h" \
