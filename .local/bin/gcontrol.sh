@@ -12,7 +12,6 @@ adding() {
 
 updating() {
   git add .
-  # read -p "Archivo para el commit: " commit_file
   git commit --amend --no-edit
 }
 
