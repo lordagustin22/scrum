@@ -24,7 +24,7 @@ backup_folders() {
 
 backup_files() {
     # rsync $RSYNC_DEFAULTS --delete --exclude={'Series','Mega-Programacion','node_modules','.angular','.vscode','.git'} "$XDG_DATA_HOME/vimwiki" "$HOME/Descargas" "$HOME/Documentos" "$HOME/Imagenes" --exclude={'Emulation','ISO','Images','Cosas-Windows'} "$HOME/Escritorio" "$DESTINO"
-    rsync $RSYNC_DEFAULTS --delete --exclude-from='/home/utane/Documentos/excluir.txt' --include-from='/home/utane/Documentos/incluir.txt' "$XDG_DATA_HOME/vimwiki" "$HOME/Descargas" "$HOME/Monero" "$HOME/Documentos" "$HOME/Imagenes" "$HOME/Escritorio" "$HOME/Videos" "$DESTINO"
+    rsync $RSYNC_DEFAULTS --delete --exclude-from='/home/utane/Documentos/excluir.txt' --include-from='/home/utane/Documentos/incluir.txt' "$XDG_DATA_HOME/vimwiki" "$HOME/Descargas" "$HOME/Monero" "$HOME/Documentos" "$HOME/Imagenes" "$HOME/Escritorio" "$DESTINO"
     notify-send "Los archivos se terminaron de mandar a $DESTINO"
 }
 

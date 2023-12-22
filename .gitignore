@@ -12,6 +12,8 @@ Musica
 Videos
 
 # Ignore filetypes
+*.db
+*.sq*
 *.txt
 *.pdf
 *.mp3

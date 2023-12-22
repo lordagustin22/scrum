@@ -7,7 +7,7 @@ alt + k; {s,m,k,z,p,f}
 
 # open GUI
 alt + g; {a,b,g,o,d,n,e,x,m,t,f,k,v}
-    {anki,$BROWSER,gimp,virt-manager,obs, soulseekqt,electrum,monero-wallet-gui,mpv --player-operation-mode=pseudo-gui, transmission-gtk, filezilla, keepassxc,code}
+    {anki,$BROWSER,gimp,virt-manager,obs, soulseekqt,electrum,monero-wallet-gui,sqlitebrowser, transmission-gtk, filezilla, keepassxc,code}
 
 # open CLI
 alt + c; {s,m,h,t,c}

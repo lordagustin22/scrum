@@ -87,10 +87,8 @@ bindkey -M visual '^[[P' vi-delete
 
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
-<<<<<<< HEAD
+# <<<<<<< HEAD
 
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
-=======
->>>>>>> e6b8fe345e3219e23218ca6f63b09eec15c5e282
