@@ -2,7 +2,7 @@
 
 startWatch() {
     while pgrep -u $UID -x xidlehook > /dev/null; do sleep 1; done
-    if [ pgrep -c xidlehook -gt 1 ]
+    if [ $(pgrep -c xidlehook) -gt 1 ]
         then
             killall -q xidlehook
     fi
