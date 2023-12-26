@@ -62,6 +62,7 @@ alias \
 alias \
         t="tmux" \
         tn="t new-session -swk" \
+        tbg="t new-session -sbg" \
         tk="t kill-session"
 
 # enable color support of ls and also add handy aliases
