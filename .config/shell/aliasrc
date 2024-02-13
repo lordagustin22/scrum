@@ -47,13 +47,12 @@ alias \
 	      sdn="sudo shutdown -h now" \
         mk="sudo make install" \
         df='df -lH ' \
-        n="neomutt" \
         mps="mpv --shuffle" \
         p="sudo pacman" \
         pn="sudo pacman -S --needed" \
         pu="sudo pacman -Syu" \
         pa="paru" \
-        n="neofetch" \
+        ne="neofetch" \
         h="htop" \
         c="cointop" \
         src="source ~/.config/shell/profile && source ~/.zshrc && source ~/.config/shell/aliasrc"
