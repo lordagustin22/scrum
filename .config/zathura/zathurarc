@@ -1,3 +1,4 @@
+# Controls
 set sandbox none
 set statusbar-h-padding 0
 set statusbar-v-padding 0
@@ -14,34 +15,43 @@ map i recolor
 map p print
 map g goto top
 
-set default-fg                      "#d9e0ee"
-set default-bg                      "#1e1d2f"
-set recolor true
-set recolor-lightcolor "#00000f"
-set recolor-darkcolor "#839496"
-set recolor-keephue
+set notification-error-bg       "#282828" # bg
+set notification-error-fg       "#fb4934" # bright:red
+set notification-warning-bg     "#282828" # bg
+set notification-warning-fg     "#fabd2f" # bright:yellow
+set notification-bg             "#282828" # bg
+set notification-fg             "#b8bb26" # bright:green
 
-set completion-bg                   "#302d41"
-set completion-fg                   "#d9e0ee"
-set completion-highlight-bg     "#575268"
-set completion-highlight-fg     "#d9e0ee"
-set completion-group-bg         "#302d41"
-set completion-group-fg         "#96cdfb"
+set completion-bg               "#504945" # bg2
+set completion-fg               "#ebdbb2" # fg
+set completion-group-bg         "#3c3836" # bg1
+set completion-group-fg         "#928374" # gray
+set completion-highlight-bg     "#83a598" # bright:blue
+set completion-highlight-fg     "#504945" # bg2
 
-set statusbar-fg                    "#d9e0ee"
-set statusbar-bg                    "#302d41"
+# Define the color in index mode
+set index-bg                    "#504945" # bg2
+set index-fg                    "#ebdbb2" # fg
+set index-active-bg             "#83a598" # bright:blue
+set index-active-fg             "#504945" # bg2
 
-set notification-bg                 "#302d41"
-set notification-fg                 "#d9e0ee"
-set notification-error-bg       "#302d41"
-set notification-error-fg       "#f28fad"
-set notification-warning-bg     "#302d41"
-set notification-warning-fg     "#fae3b0"
+set inputbar-bg                 "#282828" # bg
+set inputbar-fg                 "#ebdbb2" # fg
 
-set inputbar-fg                     "#d9e0ee"
-set inputbar-bg                     "#302d41"
+set statusbar-bg                "#504945" # bg2
+set statusbar-fg                "#ebdbb2" # fg
 
-set index-fg                        "#d9e0ee"
-set index-bg                        "#1e1d2f"
-set index-active-fg                 "#d9e0ee"
-set index-active-bg                 "#302d41"
+set highlight-color             "#fabd2f" # bright:yellow
+set highlight-active-color      "#fe8019" # bright:orange
+
+set default-bg                  "#282828" # bg
+set default-fg                  "#ebdbb2" # fg
+set render-loading              true
+set render-loading-bg           "#282828" # bg
+set render-loading-fg           "#ebdbb2" # fg
+
+# Recolor book content's color
+set recolor-lightcolor          "#282828" # bg
+set recolor-darkcolor           "#ebdbb2" # fg
+set recolor                     "true"
+# set recolor-keephue             true      # keep original color
