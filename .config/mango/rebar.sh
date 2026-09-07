@@ -1,1 +1,3 @@
-pkill waybar waybar -c ~/.config/mango/config.jsonc &
+pkill waybar
+waybar &
+# waybar -c ~/.config/mango/config.jsonc &
