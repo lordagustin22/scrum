@@ -1,4 +1,24 @@
 {
+  "layer": "top",
+  "output": ["HDMI-A-1", "eDP-1"],
+  "spacing": 0,
+  "height": 0,
+
+  "modules-left": ["hyprland/workspaces"],
+
+  "modules-center": ["mpd"],
+
+  "modules-right": [
+    "clock",
+    "battery",
+    "wireplumber",
+    "cpu",
+    "backlight",
+    "tray"
+  ]
+},
+
+{
     "hyprland/workspaces": {
         "format": "{name}:{icon}",
         "on-click": "activate",
