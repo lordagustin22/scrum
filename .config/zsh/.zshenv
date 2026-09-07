@@ -1,4 +1,4 @@
-# Esto va en /etc/zshenv
+# Esto va en /etc/zsh/zshenv
 # if [[ -z "$XDG_CONFIG_HOME" ]]
 # then
 #     export XDG_CONFIG_HOME="$HOME/.config"
