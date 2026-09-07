@@ -27,7 +27,6 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export GPG_TTY=$(tty)
 
 export XINITRC="${XDG_CONFIG_HOME:-$HOME/.config}/x11/xinitrc"
-export XMODIFIERS=@im=fcitx5
 export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
 export INPUTRC="${XDG_CONFIG_HOME:-$HOME/.config}/shell/inputrc"
 export HISTFILE="${XDG_STATE_HOME:-$HOME/.local/state}/zsh/history"
