@@ -51,6 +51,7 @@ alias \
     tcopy="wl-copy --trim-newline" \
     pcopy="pwd | wl-copy --trim-newline" \
     dopdf="lowriter --headless --convert-to pdf " \
+    wl-clients="mmsg get all-clients | jq" \
     src="source ~/.config/zsh/.zshrc && echo 'sourceado nwn!'"
 
 # Pacman
