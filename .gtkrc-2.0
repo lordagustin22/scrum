@@ -4,7 +4,7 @@
 include "/home/utane/.gtkrc-2.0.mine"
 gtk-theme-name="Adapta-Nokto-Eta"
 gtk-icon-theme-name="Tela-circle-nord-dark"
-gtk-font-name="Libertinus Sans 11"
+gtk-font-name="Iosevka Nerd Font Propo Oblique 11"
 gtk-cursor-theme-name="Bibata-Modern-Ice"
 gtk-cursor-theme-size=18
 gtk-toolbar-style=GTK_TOOLBAR_ICONS
