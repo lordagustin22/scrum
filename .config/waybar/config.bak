@@ -1,10 +1,13 @@
 {
-  "modules-left": [
-    "ext/workspaces",
-  ],
-  "modules-center": [
-    "mpd"
-  ],
+  "layer": "top",
+  "output": ["HDMI-A-1", "eDP-1"],
+  "spacing": 0,
+  "height": 0,
+
+  "modules-left": ["hyprland/workspaces"],
+
+  "modules-center": ["mpd"],
+
   "modules-right": [
     "clock",
     "battery",
@@ -16,55 +19,53 @@
 },
 
 {
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "Bat: {capacity}% {icon} {time}",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "Bat {capacity}%",
-        "format-time": "{H}:{M}",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "tooltip": true
-    },
-    "network": {
-        "format": "Online",
-        "format-disconnected": "Disconnected ⚠"
-    },
-    "ext/workspaces": {
-        "format": "{icon}",
-        "ignore-hidden": false,
+    "hyprland/workspaces": {
+        "format": "{name}:{icon}",
         "on-click": "activate",
-        "sort-by-id": true
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "active": "",
+            "default": ""
+        },
+        "sort-by-number": true
     },
-    "dwl/tags": {
-        "num-tags": 9
-    },
-    "dwl/window#layout": {
-        "format": "[{layout}]"
-    },
-    "dwl/window#title": {
-        "format": "{title}"
-    },
-    "custom/sep": {
-        "format": "|",
-        "interval": 0
+    "hyprland/window": {
+        "separate-outputs": true
     },
     "clock": {
         "format": "{:%H:%M}",
         "format-alt": "{:%d/%m/%Y}",
-        "timezone": "America/Argentina/Buenos_Aires",
         "on-click-right": "footclient -e calcure",
         "tooltip": true,
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "rotate": 0,
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": [
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ],
+        "tooltip": true
     },
     "backlight": {
         "device": "intel_backlight",
@@ -95,7 +96,7 @@
     },
     "mpd": {
         "format": "{stateIcon} {consumeIcon} {artist} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
-        "format-disconnected": "Desconectado",
+        "format-disconnected": "Dekonetado nwnww ",
         "format-stopped": "{consumeIcon} Detenido ",
         "interval": 10,
         "on-click": "mpc toggle",
@@ -123,6 +124,19 @@
         },
         "tooltip-format": "MPD (conetado nwnw)",
         "tooltip-format-disconnected": "MPD (dekonetado nwnw)"
+    },
+    "custom/bluetooth": {
+        "format": " {}",
+        "exec": "~/.config/waybar/scripts/bluetooth-display.sh",
+        "interval": 2,
+        "on-click": "blueman-manager",
+        "return-type": "plain",
+        "tooltip": true,
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+        "max-length": 25
     },
     "cpu": {
         "format": " {usage}%",
